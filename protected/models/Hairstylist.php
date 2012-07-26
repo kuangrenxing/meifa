@@ -41,13 +41,17 @@ class Hairstylist extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, sex, address, avatar, picture, motto, detail', 'required'),
+			//array('name, sex, address, avatar, picture, motto, detail', 'required'),
 			array('name', 'length', 'max'=>32),
 			array('sex', 'length', 'max'=>2),
 			array('address', 'length', 'max'=>128),
-			array('avatar, picture, motto', 'length', 'max'=>255),
+			array('motto', 'length', 'max'=>255),
+				
+			array('avatar', 'file','allowEmpty'=>false,'types'=>'jpg, gif, png','maxSize'=>1024 * 1024 * 1), // 1MB'tooLarge'=>'The file was larger than 1MB. Please upload a smaller file.',)
+			array('picture', 'file','allowEmpty'=>false,'types'=>'jpg, gif, png','maxSize'=>1024 * 1024 * 1), // 1MB'tooLarge'=>'The file was larger than 1MB. Please upload a smaller file.',)
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
+			array('detail','safe'),
 			array('id, name, sex, address, avatar, picture, motto, detail', 'safe', 'on'=>'search'),
 		);
 	}
@@ -120,5 +124,14 @@ class Hairstylist extends CActiveRecord
 	
 	public $sexChoices = array(
 				'女'=>'女',
-				'男'=>'男');
+				'男'=>'男',
+			);
+	
+	
+	public $uploadFields = array(
+			'avatar'=>'avatar',	//字段=>保存文件夹
+			'picture'=>'picture',
+			);
+	
+	
 }

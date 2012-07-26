@@ -24,12 +24,12 @@ return array(
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'meifa',
+			'password'=>'cc',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 		'yiiadmin'=>array(
-                'password'=>'public',
+                'password'=>'cc',
                 'registerModels'=>array(
                     //'application.models.Contests',
                     //'application.models.BlogPosts',
@@ -66,7 +66,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=meifa',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'public',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		
@@ -97,5 +97,9 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'chenxin448@126.com',
 		'companyname'=>'这是公司名',
+		'upload'=>'upload',//上传文件夹
+		'avatar'=>'upload'.DIRECTORY_SEPARATOR.'avatar',//头像路径
+		'picture'=>'upload'.DIRECTORY_SEPARATOR.'picture',//照片路径
+		
 	),
 );

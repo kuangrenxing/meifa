@@ -102,19 +102,73 @@ class ManageModelController extends YAdminController
      */
     public function actionCreate()
     {
+    	header("Content-Type:text/html;charset=utf-8");     	
+    	
         $model_name=(string)$_GET['model_name']; 
         $model=$this->module->loadModel($model_name);
-
+        
         if (Yii::app()->request->isPostRequest)
-        {
+        {        	
             if (isset($_POST[$model_name]))
-                $model->attributes=$_POST[$model_name];
+                $model->attributes=$_POST[$model_name];            
+          
+			//存在上传字段
+	        if(isset($model->uploadFields))
+	        {
+	        	$uploadFields = $model->uploadFields;
+	        	foreach ($uploadFields as $i=>$v)
+	        	{
+	        		$$i = CUploadedFile::getInstance($model,$i);
+        			$objectUpload[$i] = $$i;
+	        	}
+	        }
+	        if(isset($model->uploadFields))
+	        {
+		        foreach($objectUpload as $i=>$v)
+		        {
+		        	if (is_object($v) && get_class($v)==='CUploadedFile' )
+		        	{		        		
+		        		$model->$i=$v->name;  //请根据自己的需求生成相应的路径，但是要记得和下面保存路径保持一致	        		 
+		        	}
+		        	else
+		        	{
+		        		
+		        	}
+		        	
+		        }
+	        }
 
+			
             if ($model->validate())
             {
-                $model->save();
-                Yii::app()->user->setFlash('flashMessage', YiiadminModule::t('Запись создана.'));
-                $this->redirectUser($model_name,$primaryKey);
+                if($model->save())
+                {  //有上传字段进行上传
+                	if(isset($model->uploadFields))
+                	{
+                		foreach($objectUpload as $i=>$v)
+                		{
+                			if (is_object($v) && get_class($v)==='CUploadedFile' )
+                			{
+                				if(!is_dir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i))
+                				{
+                					mkdir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i,'0777');
+                				}               				
+                				//echo Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i.DIRECTORY_SEPARATOR.$v->name;
+                				
+                				$v->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i.DIRECTORY_SEPARATOR.$v->name);//路径必须真实存在，并且如果是linux系统，必须有修改权限
+                			}
+                			else
+                			{
+                				
+                			}                			 
+                		}              	
+                		
+                		Yii::app()->user->setFlash('flashMessage', YiiadminModule::t('Запись создана.'));
+                		$this->redirectUser($model_name,$primaryKey);   
+                	}             	
+                }
+                
+              
             }
         }
 
@@ -159,6 +213,10 @@ class ManageModelController extends YAdminController
             'model'=>$model,            
         ));
     }
+    
+    
+
+    
 
     public function actionDelete()
     {

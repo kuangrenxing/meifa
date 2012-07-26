@@ -20,6 +20,7 @@
 <?php
     $form=$this->beginWidget('CActiveForm', array(
         'id'=>get_class($model).'-id-form',
+		'htmlOptions'=>array('enctype'=>'multipart/form-data'),
     ));
 ?>
 

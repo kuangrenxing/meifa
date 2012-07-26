@@ -27,7 +27,7 @@ class HairstylistController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','test'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -76,6 +76,52 @@ class HairstylistController extends Controller
 		$this->render('create',array(
 			'model'=>$model,
 		));
+	}
+	public function actionTest()
+	{
+		$model=new Hairstylist;
+		
+		if(isset($_POST['Hairstylist']))
+		{
+			$avatar=CUploadedFile::getInstance($model,'avatar');	
+			$picture=CUploadedFile::getInstance($model,'picture');
+// 			print_r($avatar);
+// 			print_r(iconv('utf-8','gb2312',$avatar->name));
+// 			print_r($avatar->ExtensionName);
+			
+			
+			if (is_object($avatar) && get_class($avatar)==='CUploadedFile' && is_object($picture) && get_class($picture)==='CUploadedFile' )
+			{
+				$model->avatar=$avatar->name;  //请根据自己的需求生成相应的路径，但是要记得和下面保存路径保持一致
+				$model->picture=$picture->name;
+				
+			}
+			else
+			{
+				//echo "dd错误";exit;
+			}
+			if($model->save())
+			{
+				if (is_object($avatar) && get_class($avatar)==='CUploadedFile' && is_object($picture) && get_class($picture)==='CUploadedFile' )
+				{
+					if(!is_dir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['avatar']))
+					{						
+						mkdir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['avatar'],'0777');
+					}
+					if(!is_dir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['picture']))
+					{
+						mkdir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['picture'],'0777');
+					}
+					$avatar->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['avatar'].DIRECTORY_SEPARATOR.$avatar->name);//路径必须真实存在，并且如果是linux系统，必须有修改权限
+					$picture->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['picture'].DIRECTORY_SEPARATOR.$picture->name);//路径必须真实存在，并且如果是linux系统，必须有修改权限
+				}
+				//$this->renderPartial(array('view','id'=>$model->avatar));
+			}
+		}
+		
+		$this->renderPartial("test",array(
+				'model'=>$model,
+				));
 	}
 
 	/**
