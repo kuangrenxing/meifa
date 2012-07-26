@@ -133,5 +133,24 @@ class Hairstylist extends CActiveRecord
 			'picture'=>'picture',
 			);
 	
+	public function adminSearch()
+	{
+		return array(
+				// Data provider, by default is "search()"
+				//'dataProvider'=>$this->search(),
+				'columns'=>array(
+						'id',
+						'name',
+						'sex',
+						'address',
+						'avatar',
+						'picture',
+						'motto',
+						'detail',
+						
+				),
+		);
+	}
+	
 	
 }
