@@ -3826,3 +3826,1904 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2012/07/26 22:26:16 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/meifa/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/meifa/yii/web/CAssetManager.php:116
+Stack trace:
+#0 /var/www/meifa/yii/web/CAssetManager.php(101): CAssetManager->setBasePath('/var/www/meifa/...')
+#1 /var/www/meifa/yii/web/CAssetManager.php(219): CAssetManager->getBasePath()
+#2 /var/www/meifa/protected/modules/yiiadmin/YiiadminModule.php(268): CAssetManager->publish('/var/www/meifa/...')
+#3 /var/www/meifa/yii/base/CComponent.php(112): YiiadminModule->getAssetsUrl()
+#4 /var/www/meifa/yii/base/CModule.php(106): CComponent->__get('assetsUrl')
+#5 /var/www/meifa/protected/modules/yiiadmin/views/layouts/main.php(3): CModule->__get('assetsUrl')
+#6 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#7 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#8 /var/www/meifa/yii/web/CController.php(785): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#9 /var/www/meifa/protected/modules/yiiadmin/controllers/DefaultController.php(43): CController->render('login', Array)
+#10 /var/www/meifa/yii/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#11 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('login')
+#15 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/defaul...')
+#16 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/meifa/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/yiiadmin/default/login
+---
+2012/07/26 22:26:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:26:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:26:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:26:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /var/www/meifa/yii/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/meifa/yii/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/meifa/yii/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/meifa/yii/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/meifa/yii/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/meifa/yii/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/meifa/yii/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/meifa/yii/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Hairstylist))
+#7 /var/www/meifa/yii/db/ar/CActiveRecord.php(394): CActiveRecord::model('Hairstylist')
+#8 /var/www/meifa/yii/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 /var/www/meifa/protected/modules/yiiadmin/YiiadminModule.php(113): CActiveRecord->__construct()
+#10 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(32): YiiadminModule->loadModel('Hairstylist')
+#11 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#12 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#16 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#17 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/meifa/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstylist
+---
+2012/07/26 22:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:27:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:27:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:28:58 [error] [php] move_uploaded_file(/var/www/meifa/protected/upload/avatar/27.jpg): failed to open stream: Permission denied (/var/www/meifa/yii/web/CUploadedFile.php:197)
+Stack trace:
+#0 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionCreate()
+#1 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/meifa/yii/web/CController.php(287): ManageModelController->runAction()
+#3 /var/www/meifa/yii/web/CController.php(266): ManageModelController->runActionWithFilters()
+#4 /var/www/meifa/yii/web/CWebApplication.php(276): ManageModelController->run()
+#5 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/meifa/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/yiiadmin/manageModel/create/model_name/Hairstylist
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (158)
+in /var/www/meifa/index.php (13)
+2012/07/26 22:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:29:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:30:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:30:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:30:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:32:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:33:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:34:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:34:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:37:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 22:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:03:41 [warning] [application] Failed to set unsafe attribute "avatar" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (195)
+in /var/www/meifa/index.php (13)
+2012/07/26 23:03:41 [warning] [application] Failed to set unsafe attribute "picture" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (195)
+in /var/www/meifa/index.php (13)
+2012/07/26 23:03:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:04:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:06:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:07:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:08:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:08:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:18:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:18:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:18:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:19:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:28:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:28:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:29:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/26 23:29:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:06:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:06:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:08:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:16:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:23:12 [warning] [application] Failed to set unsafe attribute "avatar" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:23:12 [warning] [application] Failed to set unsafe attribute "picture" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:25:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:25:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:25:36 [warning] [application] Failed to set unsafe attribute "avatar" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:25:36 [warning] [application] Failed to set unsafe attribute "picture" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:26:45 [warning] [application] Failed to set unsafe attribute "avatar" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:26:45 [warning] [application] Failed to set unsafe attribute "picture" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:27:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:27:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:27:09 [warning] [application] Failed to set unsafe attribute "avatar" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:27:09 [warning] [application] Failed to set unsafe attribute "picture" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:27:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:28:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:28:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:28:17 [warning] [application] Failed to set unsafe attribute "avatar" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:28:17 [warning] [application] Failed to set unsafe attribute "picture" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:28:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:31:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:34:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:35:21 [warning] [application] Failed to set unsafe attribute "avatar" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:35:21 [warning] [application] Failed to set unsafe attribute "picture" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:35:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:36:59 [warning] [application] Failed to set unsafe attribute "avatar" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:36:59 [warning] [application] Failed to set unsafe attribute "picture" of "Hairstylist".
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (198)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:37:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:39:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:40:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:40:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:42:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:42:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:42:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:43:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:45:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:46:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:46:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:46:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:46:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:47:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:47:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:47:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:47:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:47:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:48:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:49:47 [error] [exception.CException] exception 'CException' with message 'Property "Hairstyleshow.name" is not defined.' in /var/www/meifa/yii/base/CComponent.php:131
+Stack trace:
+#0 /var/www/meifa/yii/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/meifa/yii/web/helpers/CHtml.php(2044): CActiveRecord->__get('name')
+#2 /var/www/meifa/yii/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(Hairstyleshow), 'name')
+#3 /var/www/meifa/yii/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Hairstyleshow), 'name', Array)
+#4 /var/www/meifa/yii/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Hairstyleshow), 'name', Array)
+#5 /var/www/meifa/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#6 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(450): CGridColumn->renderFilterCell()
+#7 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#8 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#9 /var/www/meifa/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/meifa/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, ' ?             ...')
+#12 /var/www/meifa/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/meifa/yii/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#16 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#17 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#18 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#19 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#20 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#21 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#25 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#26 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/meifa/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 00:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:50:39 [error] [exception.CException] exception 'CException' with message 'Property "Hairstyleshow.name" is not defined.' in /var/www/meifa/yii/base/CComponent.php:131
+Stack trace:
+#0 /var/www/meifa/yii/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/meifa/yii/web/helpers/CHtml.php(2044): CActiveRecord->__get('name')
+#2 /var/www/meifa/yii/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(Hairstyleshow), 'name')
+#3 /var/www/meifa/yii/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Hairstyleshow), 'name', Array)
+#4 /var/www/meifa/yii/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Hairstyleshow), 'name', Array)
+#5 /var/www/meifa/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#6 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(450): CGridColumn->renderFilterCell()
+#7 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#8 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#9 /var/www/meifa/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/meifa/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, ' ?             ...')
+#12 /var/www/meifa/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/meifa/yii/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#16 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#17 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#18 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#19 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#20 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#21 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#25 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#26 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/meifa/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 00:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:50:40 [error] [exception.CException] exception 'CException' with message 'Property "Hairstyleshow.name" is not defined.' in /var/www/meifa/yii/base/CComponent.php:131
+Stack trace:
+#0 /var/www/meifa/yii/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/meifa/yii/web/helpers/CHtml.php(2044): CActiveRecord->__get('name')
+#2 /var/www/meifa/yii/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(Hairstyleshow), 'name')
+#3 /var/www/meifa/yii/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Hairstyleshow), 'name', Array)
+#4 /var/www/meifa/yii/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Hairstyleshow), 'name', Array)
+#5 /var/www/meifa/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#6 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(450): CGridColumn->renderFilterCell()
+#7 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#8 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#9 /var/www/meifa/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/meifa/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, ' ?             ...')
+#12 /var/www/meifa/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/meifa/yii/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#16 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#17 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#18 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#19 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#20 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#21 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#25 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#26 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/meifa/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 00:50:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:50:41 [error] [exception.CException] exception 'CException' with message 'Property "Hairstyleshow.name" is not defined.' in /var/www/meifa/yii/base/CComponent.php:131
+Stack trace:
+#0 /var/www/meifa/yii/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/meifa/yii/web/helpers/CHtml.php(2044): CActiveRecord->__get('name')
+#2 /var/www/meifa/yii/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(Hairstyleshow), 'name')
+#3 /var/www/meifa/yii/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Hairstyleshow), 'name', Array)
+#4 /var/www/meifa/yii/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Hairstyleshow), 'name', Array)
+#5 /var/www/meifa/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#6 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(450): CGridColumn->renderFilterCell()
+#7 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#8 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#9 /var/www/meifa/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/meifa/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, ' ?             ...')
+#12 /var/www/meifa/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/meifa/yii/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#16 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#17 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#18 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#19 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#20 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#21 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#25 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#26 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/meifa/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 00:50:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:50:41 [error] [exception.CException] exception 'CException' with message 'Property "Hairstyleshow.name" is not defined.' in /var/www/meifa/yii/base/CComponent.php:131
+Stack trace:
+#0 /var/www/meifa/yii/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/meifa/yii/web/helpers/CHtml.php(2044): CActiveRecord->__get('name')
+#2 /var/www/meifa/yii/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(Hairstyleshow), 'name')
+#3 /var/www/meifa/yii/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Hairstyleshow), 'name', Array)
+#4 /var/www/meifa/yii/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Hairstyleshow), 'name', Array)
+#5 /var/www/meifa/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#6 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(450): CGridColumn->renderFilterCell()
+#7 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#8 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#9 /var/www/meifa/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/meifa/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, ' ?             ...')
+#12 /var/www/meifa/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/meifa/yii/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#16 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#17 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#18 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#19 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#20 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#21 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#25 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#26 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/meifa/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 00:50:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:50:42 [error] [exception.CException] exception 'CException' with message 'Property "Hairstyleshow.name" is not defined.' in /var/www/meifa/yii/base/CComponent.php:131
+Stack trace:
+#0 /var/www/meifa/yii/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/meifa/yii/web/helpers/CHtml.php(2044): CActiveRecord->__get('name')
+#2 /var/www/meifa/yii/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(Hairstyleshow), 'name')
+#3 /var/www/meifa/yii/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Hairstyleshow), 'name', Array)
+#4 /var/www/meifa/yii/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Hairstyleshow), 'name', Array)
+#5 /var/www/meifa/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#6 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(450): CGridColumn->renderFilterCell()
+#7 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#8 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#9 /var/www/meifa/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/meifa/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, ' ?             ...')
+#12 /var/www/meifa/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/meifa/yii/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#16 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#17 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#18 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#19 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#20 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#21 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#25 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#26 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/meifa/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 00:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:50:42 [error] [exception.CException] exception 'CException' with message 'Property "Hairstyleshow.name" is not defined.' in /var/www/meifa/yii/base/CComponent.php:131
+Stack trace:
+#0 /var/www/meifa/yii/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/meifa/yii/web/helpers/CHtml.php(2044): CActiveRecord->__get('name')
+#2 /var/www/meifa/yii/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(Hairstyleshow), 'name')
+#3 /var/www/meifa/yii/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Hairstyleshow), 'name', Array)
+#4 /var/www/meifa/yii/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Hairstyleshow), 'name', Array)
+#5 /var/www/meifa/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#6 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(450): CGridColumn->renderFilterCell()
+#7 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#8 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#9 /var/www/meifa/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/meifa/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, ' ?             ...')
+#12 /var/www/meifa/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/meifa/yii/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#16 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#17 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#18 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#19 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#20 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#21 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#25 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#26 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/meifa/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 00:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:50:42 [error] [exception.CException] exception 'CException' with message 'Property "Hairstyleshow.name" is not defined.' in /var/www/meifa/yii/base/CComponent.php:131
+Stack trace:
+#0 /var/www/meifa/yii/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/meifa/yii/web/helpers/CHtml.php(2044): CActiveRecord->__get('name')
+#2 /var/www/meifa/yii/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(Hairstyleshow), 'name')
+#3 /var/www/meifa/yii/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Hairstyleshow), 'name', Array)
+#4 /var/www/meifa/yii/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Hairstyleshow), 'name', Array)
+#5 /var/www/meifa/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#6 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(450): CGridColumn->renderFilterCell()
+#7 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#8 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#9 /var/www/meifa/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/meifa/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, ' ?             ...')
+#12 /var/www/meifa/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/meifa/yii/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#16 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#17 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#18 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#19 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#20 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#21 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#25 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#26 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/meifa/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 00:50:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:52:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:52:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:54:52 [error] [php] chmod(): No such file or directory (/var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php:154)
+Stack trace:
+#0 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/meifa/yii/web/CController.php(287): ManageModelController->runAction()
+#2 /var/www/meifa/yii/web/CController.php(266): ManageModelController->runActionWithFilters()
+#3 /var/www/meifa/yii/web/CWebApplication.php(276): ManageModelController->run()
+#4 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/meifa/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/yiiadmin/manageModel/create/model_name/Hairstyleshow
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (154)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:56:22 [error] [php] move_uploaded_file(/var/www/meifa/protected/upload/hairstyleshow/27.jpg): failed to open stream: Permission denied (/var/www/meifa/yii/web/CUploadedFile.php:197)
+Stack trace:
+#0 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionCreate()
+#1 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/meifa/yii/web/CController.php(287): ManageModelController->runAction()
+#3 /var/www/meifa/yii/web/CController.php(266): ManageModelController->runActionWithFilters()
+#4 /var/www/meifa/yii/web/CWebApplication.php(276): ManageModelController->run()
+#5 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/meifa/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/yiiadmin/manageModel/create/model_name/Hairstyleshow
+in /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php (158)
+in /var/www/meifa/index.php (13)
+2012/07/27 00:56:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 00:59:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:02:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:02:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:02:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:02:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:02:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:09:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:10:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:11:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:14:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:18:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:20:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:20:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:20:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:23:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:23:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:26:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:27:04 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /var/www/meifa/yii/zii/widgets/grid/CGridView.php:337
+Stack trace:
+#0 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(308): CGridView->createDataColumn('')
+#1 /var/www/meifa/yii/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#2 /var/www/meifa/yii/web/CBaseController.php(148): CGridView->init()
+#3 /var/www/meifa/yii/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /var/www/meifa/protected/modules/yiiadmin/views/manageModel/list_objects.php(15): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /var/www/meifa/yii/web/CBaseController.php(127): require('/var/www/meifa/...')
+#6 /var/www/meifa/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/meifa/...', Array, true)
+#7 /var/www/meifa/yii/web/CController.php(870): CBaseController->renderFile('/var/www/meifa/...', Array, true)
+#8 /var/www/meifa/yii/web/CController.php(783): CController->renderPartial('list_objects', Array, true)
+#9 /var/www/meifa/protected/modules/yiiadmin/controllers/ManageModelController.php(94): CController->render('list_objects', Array)
+#10 /var/www/meifa/yii/web/actions/CInlineAction.php(50): ManageModelController->actionList()
+#11 /var/www/meifa/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/meifa/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/meifa/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/meifa/yii/web/CWebApplication.php(276): CController->run('list')
+#15 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('yiiadmin/manage...')
+#16 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/meifa/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/yiiadmin/manageModel/list/model_name/Careers
+HTTP_REFERER=http://meifa.dev/index.php/yiiadmin/manageModel/create/model_name/Careers
+---
+2012/07/27 01:27:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:27:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:29:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:30:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:30:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:30:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:31:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 01:31:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/meifa/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/meifa/yii/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/meifa/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/meifa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

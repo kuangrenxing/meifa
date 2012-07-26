@@ -106,6 +106,7 @@ class ManageModelController extends YAdminController
     	
         $model_name=(string)$_GET['model_name']; 
         $model=$this->module->loadModel($model_name);
+        $model->scenario='create';
         
         if (Yii::app()->request->isPostRequest)
         {        	
@@ -121,9 +122,7 @@ class ManageModelController extends YAdminController
 	        		$$i = CUploadedFile::getInstance($model,$i);
         			$objectUpload[$i] = $$i;
 	        	}
-	        }
-	        if(isset($model->uploadFields))
-	        {
+	       
 		        foreach($objectUpload as $i=>$v)
 		        {
 		        	if (is_object($v) && get_class($v)==='CUploadedFile' )
@@ -141,21 +140,20 @@ class ManageModelController extends YAdminController
 			
             if ($model->validate())
             {
-                if($model->save())
-                {  //有上传字段进行上传
+                //有上传字段进行上传
                 	if(isset($model->uploadFields))
                 	{
                 		foreach($objectUpload as $i=>$v)
                 		{
                 			if (is_object($v) && get_class($v)==='CUploadedFile' )
                 			{
-                				if(!is_dir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i))
+                				if(!is_dir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i]))
                 				{
-                					mkdir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i,'0777');
-                				}               				
-                				//echo Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i.DIRECTORY_SEPARATOR.$v->name;
+                					mkdir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i],'0777');
+                				}              				
                 				
-                				$v->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i.DIRECTORY_SEPARATOR.$v->name);//路径必须真实存在，并且如果是linux系统，必须有修改权限
+                				
+                				$v->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i].DIRECTORY_SEPARATOR.$v->name);//路径必须真实存在，并且如果是linux系统，必须有修改权限
                 			}
                 			else
                 			{
@@ -164,9 +162,11 @@ class ManageModelController extends YAdminController
                 		}         		
                 		 
                 	}  
-                	Yii::app()->user->setFlash('flashMessage', YiiadminModule::t('Запись создана.'));
-                	$this->redirectUser($model_name,$primaryKey);
-                }
+                	if($model->save())
+                	{
+	                	Yii::app()->user->setFlash('flashMessage', YiiadminModule::t('Запись создана.'));
+	                	$this->redirectUser($model_name,$primaryKey);
+                	}
                 
               
             }
@@ -186,13 +186,18 @@ class ManageModelController extends YAdminController
 
     public function actionUpdate()
     {
+    	header("Content-Type:text/html;charset=utf-8");
+    	
         $model_name=(string)$_GET['model_name']; 
         $model=$this->module->loadModel($model_name)->findByPk($_GET['pk']);
-
+		$oldmodel = $model->attributes;
+		//print_r($oldmodel);
         if (Yii::app()->request->isPostRequest)
         {
             if (isset($_POST[$model_name]))
                 $model->attributes=$_POST[$model_name]; 
+            
+
             
             //存在上传字段
             if(isset($model->uploadFields))
@@ -203,9 +208,8 @@ class ManageModelController extends YAdminController
             		$$i = CUploadedFile::getInstance($model,$i);
             		$objectUpload[$i] = $$i;
             	}
-            }
-            if(isset($model->uploadFields))
-            {
+           
+            	
             	foreach($objectUpload as $i=>$v)
             	{
             		if (is_object($v) && get_class($v)==='CUploadedFile' )
@@ -219,33 +223,60 @@ class ManageModelController extends YAdminController
             		 
             	}
             }
+            
+           
+            
 
             if ($model->validate())
             {
-                if($model->save())
+            	
+            	//有上传字段进行上传
+            	if(isset($model->uploadFields))
+            	{
+            		
+            		//删除已经有文件
+            		foreach($model->attributes as $i=>$v)
+            		{
+            			foreach ($oldmodel as $io=>$vo)
+            			{
+            				if($i == $io && $model->$i!=$oldmodel[$io])
+            				{           					
+            					if(is_file(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i].DIRECTORY_SEPARATOR.$oldmodel[$io]))
+            					{
+            						
+            						if(!@unlink(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i].DIRECTORY_SEPARATOR.$oldmodel[$io]))
+            						{
+            							chmod(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i],0777);
+            							
+            							unlink(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i].DIRECTORY_SEPARATOR.$oldmodel[$io]);
+            						}
+            					}
+            				}
+            			}
+            		}
+            		
+            		
+            		foreach($objectUpload as $i=>$v)
+            		{
+            			if (is_object($v) && get_class($v)==='CUploadedFile' )
+            			{
+            				if(!is_dir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i]))
+            				{
+            					mkdir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i],'0777');
+            				}
+            				//echo Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i.DIRECTORY_SEPARATOR.$v->name;
+            				 
+            				$v->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$uploadFields[$i].DIRECTORY_SEPARATOR.$v->name);//路径必须真实存在，并且如果是linux系统，必须有修改权限
+            			}
+            			else
+            			{
+            				 
+            			}
+            		}
+            		 
+            	}
+                if($model->save(false))
                 {
-                	//有上传字段进行上传
-                	if(isset($model->uploadFields))
-                	{
-                		foreach($objectUpload as $i=>$v)
-                		{
-                			if (is_object($v) && get_class($v)==='CUploadedFile' )
-                			{
-                				if(!is_dir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i))
-                				{
-                					mkdir(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i,'0777');
-                				}
-                				//echo Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i.DIRECTORY_SEPARATOR.$v->name;
-                	
-                				$v->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$i.DIRECTORY_SEPARATOR.'a.jpg');//路径必须真实存在，并且如果是linux系统，必须有修改权限
-                			}
-                			else
-                			{
-                	
-                			}
-                		}
-                		 
-                	}
                 	Yii::app()->user->setFlash('flashMessage', YiiadminModule::t('Изменения сохранены.'));
                 	$this->redirectUser($model_name,$model->primaryKey);
                 }
@@ -276,6 +307,22 @@ class ManageModelController extends YAdminController
 
         if ($model!==null)
         {
+        	//存在上传字段
+            if(isset($model->uploadFields))
+            {
+            	$uploadFields = $model->uploadFields;
+            	foreach ($uploadFields as $i=>$v)
+            	{
+            		if(is_file(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$v.DIRECTORY_SEPARATOR.$model->$i))
+            		{
+	            		if(!@unlink(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$v.DIRECTORY_SEPARATOR.$model->$i))
+	            		{
+	            			chmod(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$v,0777);
+	            			unlink(Yii::app()->basePath.DIRECTORY_SEPARATOR.Yii::app()->params['upload'].DIRECTORY_SEPARATOR.$v.DIRECTORY_SEPARATOR.$model->$i);
+	            		}
+            		}
+            	}
+            }
             $model->delete();
             $this->redirect($this->createUrl('manageModel/list',array('model_name'=>$model_name)));
         }
