@@ -7866,3 +7866,288 @@ Stack trace:
 REQUEST_URI=/assets/a47ecec3/img/icons/icon-object-tools-add-handler.png'),%20-webkit-gradient(linear,%20left%20top,%20left%20bottom,%20from(
 HTTP_REFERER=http://meifa.dev/yiiadmin/manageModel/list/model_name/Specialoffers
 ---
+2012/07/27 15:06:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:09:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:10:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:10:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:10:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:11:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:11:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:12:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiiadmin/yiiadmin/manageModel/list/model_name/About".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('yiiadmin/yiiadm...')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiadmin/yiiadmin/manageModel/list/model_name/About
+HTTP_REFERER=http://meifa.dev/yiiadmin/manageModel/list/model_name/Contact
+---
+2012/07/27 15:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:13:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiiadmin/yiiadmin/manageModel/list/model_name/Hairstylist".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('yiiadmin/yiiadm...')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiadmin/yiiadmin/manageModel/list/model_name/Hairstylist
+HTTP_REFERER=http://meifa.dev/yiiadmin/yiiadmin/manageModel/list/model_name/About
+---
+2012/07/27 15:13:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:13:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiiadmin/yiiadmin/manageModel/list/model_name/Hairstyleshow".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('yiiadmin/yiiadm...')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiadmin/yiiadmin/manageModel/list/model_name/Hairstyleshow
+HTTP_REFERER=http://meifa.dev/yiiadmin/yiiadmin/manageModel/list/model_name/Hairstylist
+---
+2012/07/27 15:13:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:13:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiiadmin/yiiadmin/manageModel/list/model_name/Hairproducts".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('yiiadmin/yiiadm...')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiadmin/yiiadmin/manageModel/list/model_name/Hairproducts
+HTTP_REFERER=http://meifa.dev/yiiadmin/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 15:13:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiiadmin/yiiadmin/manageModel/list/model_name/Hairproducts".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('yiiadmin/yiiadm...')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiadmin/yiiadmin/manageModel/list/model_name/Hairproducts
+HTTP_REFERER=http://meifa.dev/yiiadmin/yiiadmin/manageModel/list/model_name/Hairstyleshow
+---
+2012/07/27 15:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/27 15:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

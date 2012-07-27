@@ -17,14 +17,14 @@ $cs->registerCssFile($baseUrl.'/css/base.css');
     <div class="branding">&nbsp;</div> 
     <div class="admin-title">Yii Administration</div> 
 	<ul class="nav">
-		<li><a class="active" href="">公司简介</a></li>
-		<li><a href="">发型师</a></li>
-		<li><a href="">发型展示</a></li>
-		<li><a href="">发型产品</a></li>
-		<li><a href="">在线加盟</a></li>
-		<li><a href="">优惠信息</a></li>
-		<li><a href="">招贤纳士</a></li>
-		<li><a href="">联系我们</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "About"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/About');?>">公司简介</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Hairstylist"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Hairstylist');?>">发型师</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Hairstyleshow"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Hairstyleshow');?>">发型展示</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Hairproducts"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Hairproducts');?>">发型产品</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Join"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Join');?>">在线加盟</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Specialoffers"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Specialoffers');?>">优惠信息</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Careers"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Careers');?>">招贤纳士</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Contact"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Contact');?>">联系我们</a></li>
 	</ul>
         <ul id="user-tools"> 
             <li><a href="#" class="user-options-handler collapse-handler"><?php echo Yii::app()->user->name;?></a></li>
