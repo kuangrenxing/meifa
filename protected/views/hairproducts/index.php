@@ -95,9 +95,36 @@
     <td class="box3_m00" align="left" valign="top">
     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
     	<tbody>
-    	<?php foreach($model as $i=>$v):?>
+    	<?php 
+    	header("content-type:text/html;charset=utf-8");
+    	print_r( $model['0']->uploadFields['picture']);
+
+    	foreach($model as $i=>$v):?>
 			<?php if($i%4==0):?>
 				<tr>
+			<?php endif;?>
+			<td align="left" valign="top">					
+				<div class="product_product_img">
+				<img src="<?php echo Yii::app()->baseUrl.DIRECTORY_SEPARATOR.Yii::app()->params['uploadUrl'].DIRECTORY_SEPARATOR.$model['0']->uploadFields['picture'].DIRECTORY_SEPARATOR.$v['picture'];?>" width="160" height="132" border="0">
+					<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
+				         <tbody><tr>
+				            <td valign="top" align="left">		
+				 				<a href="http://t.mobanku.com/00846/productshow.asp?id=305&bid=25&sid=175&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
+							 </td>
+				         	</tr>
+				    	</tbody>
+				    </table> 
+				</div>
+				<div id="product_detail">
+				<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=305&bid=25&sid=175"><?php echo $v['name'];?></a></p>
+				<p class="product_List_marketprice">市场价：<span><?php echo $v['price'];?>元</span></p>
+				
+				<p class="product_list_introduce"><a href="<?php echo Yii::app()->createUrl('hairproducts/view',array('id'=>$v['id']));?>">详细情况</a></p>
+
+				</div>
+			</td>
+			<?php if(($i+1)%4==0):?>
+			
 			<?php endif;?>
     	<?php endforeach;?>
     	<tr>

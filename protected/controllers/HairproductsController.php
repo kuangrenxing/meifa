@@ -132,7 +132,7 @@ class HairproductsController extends Controller
 	    $pages=new CPagination($count);  
 	  
 	    
-	     $pages->pageSize=YII_DEBUG ? 2:8;  
+	     $pages->pageSize=YII_DEBUG ? 8:8;  
 	     $pages->applyLimit($criteria);  
 	     $model = Hairproducts::model()->findAll($criteria);  
 	  
