@@ -202,7 +202,23 @@ ul.user-options li:last-child {
     border-bottom: 0;
 }
 
-
+/*nav*/
+.nav li{
+	/* padding: 8px 10px; */
+}
+#header .nav li a {
+	display: block;
+	padding: 8px 10px;
+	color: #999;
+}
+#header .nav a.active, #header .nav a.active:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #222;
+}
+.nav li a{
+	font-size:12px;
+}
 
 /*  Breadcrumbs
 ------------------------------------------------------------------------------------------------------ */

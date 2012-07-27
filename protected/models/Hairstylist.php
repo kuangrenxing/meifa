@@ -15,6 +15,9 @@
  */
 class Hairstylist extends CActiveRecord
 {
+	public $adminName="发型师";
+	public $pluralNames=array('0'=>'发型师');
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.

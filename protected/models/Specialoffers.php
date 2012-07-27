@@ -12,6 +12,9 @@
  */
 class Specialoffers extends CActiveRecord
 {
+	public $adminName="优惠信息";
+	public $pluralNames=array('0'=>'优惠信息');
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -38,8 +41,8 @@ class Specialoffers extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content, create_time, update_time', 'required'),
-			array('create_time, update_time', 'numerical', 'integerOnly'=>true),
+			array('title, content', 'required'),
+			//array('create_time, update_time', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>64),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -65,10 +68,10 @@ class Specialoffers extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'content' => 'Content',
-			'create_time' => 'Create Time',
-			'update_time' => 'Update Time',
+			'title' => '标题',
+			'content' => '内容',
+			'create_time' => '创建时间',
+			'update_time' => '修改时间',
 		);
 	}
 
@@ -92,5 +95,55 @@ class Specialoffers extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	
+	public function attributeWidgets()
+	{
+		return array(
+				array('title', 'textField'), // For choices create variable name proffesion_idChoices
+				array('content','textArea'),
+		);
+	}
+	
+	
+	public function adminSearch()
+	{
+		return array(
+				// Data provider, by default is "search()"
+				//'dataProvider'=>$this->search(),
+				'columns'=>array(
+						'id',
+						'title',
+						'content',
+						 array(
+		                    'name'=>'create_time',
+						 	'type'=>'html',
+		                    'value'=>'date("Y-m-d H:i:s",$data->create_time)',	                   
+                		),
+						array(
+							'name'=>'update_time',
+							'type'=>'html',
+							'value'=>'date("Y-m-d H:i:s",$data->update_time)',
+						),
+	
+				),
+		);
+	}
+	
+	protected function beforeSave()
+	{
+		if($this->isNewRecord)
+		{
+			$this->create_time=time();
+			$this->update_time=time();
+		}
+		else
+		{
+			$this->update_time=$this->create_time;
+				
+		}
+		return true;
+	
 	}
 }

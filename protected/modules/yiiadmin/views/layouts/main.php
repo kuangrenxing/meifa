@@ -16,9 +16,18 @@ $cs->registerCssFile($baseUrl.'/css/base.css');
 <div id="header"> 
     <div class="branding">&nbsp;</div> 
     <div class="admin-title">Yii Administration</div> 
-    
+	<ul class="nav">
+		<li><a class="active" href="">公司简介</a></li>
+		<li><a href="">发型师</a></li>
+		<li><a href="">发型展示</a></li>
+		<li><a href="">发型产品</a></li>
+		<li><a href="">在线加盟</a></li>
+		<li><a href="">优惠信息</a></li>
+		<li><a href="">招贤纳士</a></li>
+		<li><a href="">联系我们</a></li>
+	</ul>
         <ul id="user-tools"> 
-            <!--<li><a href="#" class="user-options-handler collapse-handler">username</a></li>-->
+            <li><a href="#" class="user-options-handler collapse-handler"><?php echo Yii::app()->user->name;?></a></li>
             <li><a href="<?php echo $this->createUrl('/yiiadmin/default/logout'); ?>" class="user-options-handler collapse-handler"><?php echo YiiadminModule::t('Выход'); ?></a></li>
         </ul> 
 </div> 
