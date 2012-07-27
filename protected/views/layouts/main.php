@@ -33,15 +33,15 @@
     <td align="right" valign="top" class="nav"><div id="global-header">
 <div class="nav">
 <ul>
-    <li><a href="http://t.mobanku.com/00846/">网站首页</a></li>
-    <li class="on"><a href="./about_files/about.htm">关于我们</a></li>
-    <li><a href="http://t.mobanku.com/00846/products.asp?bid=1">关于我们</a></li>
-    <li><a href="http://t.mobanku.com/00846/products.asp?bid=24">发型展示</a></li>
-    <li><a href="http://t.mobanku.com/00846/products.asp?bid=25">美发产品</a></li>
-    <li><a href="http://t.mobanku.com/00846/sales.asp">在线加盟</a></li>
-    <li><a href="http://t.mobanku.com/00846/service.asp">优惠信息</a></li>
-    <li><a href="http://t.mobanku.com/00846/job.asp">招贤纳士</a></li>
-    <li><a href="http://t.mobanku.com/00846/contact.asp">联系我们</a></li>
+    <li><a href="<?php echo Yii::app()->baseUrl;?>/">网站首页</a></li>
+    <li class="on"><a href="<?php echo Yii::app()->createUrl("about");?>">关于我们</a></li>
+    <li><a href="<?php echo Yii::app()->createUrl("hairstylist");?>">发型艺术家</a></li>
+    <li><a href="<?php echo Yii::app()->createUrl("hairstyleshow");?>">发型展示</a></li>
+    <li><a href="<?php echo Yii::app()->createUrl("hairproducts");?>">美发产品</a></li>
+    <li><a href="<?php echo Yii::app()->createUrl("join");?>">在线加盟</a></li>
+    <li><a href="<?php echo Yii::app()->createUrl("specialoffers");?>">优惠信息</a></li>
+    <li><a href="<?php echo Yii::app()->createUrl("careers");?>">招贤纳士</a></li>
+    <li><a href="<?php echo Yii::app()->createUrl("contact");?>">联系我们</a></li>
 </ul>
 </div>
 </div></td>

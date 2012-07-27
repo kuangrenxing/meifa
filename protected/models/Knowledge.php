@@ -1,26 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "careers".
+ * This is the model class for table "knowledge".
  *
- * The followings are the available columns in table 'careers':
+ * The followings are the available columns in table 'knowledge':
  * @property integer $id
- * @property string $position
- * @property string $job
- * @property string $requirement
- * @property string $detail
+ * @property string $title
+ * @property string $content
  * @property integer $create_time
  * @property integer $update_time
  */
-class Careers extends CActiveRecord
+class Knowledge extends CActiveRecord
 {
-	public $adminName="人才招聘";
-	public $pluralNames=array('0'=>'人才招聘');
+	public $adminName="美发常识";
+	public $pluralNames=array('0'=>'美发常识');
 	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Careers the static model class
+	 * @return Knowledge the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -32,7 +30,7 @@ class Careers extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'careers';
+		return 'knowledge';
 	}
 
 	/**
@@ -43,12 +41,12 @@ class Careers extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('position, job, requirement, detail', 'required'),
+			array('title, content', 'required'),
 			//array('create_time, update_time', 'numerical', 'integerOnly'=>true),
-			array('position', 'length', 'max'=>64),
+			array('title', 'length', 'max'=>256),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, position, job, requirement, detail, create_time, update_time', 'safe', 'on'=>'search'),
+			array('id, title, content, create_time, update_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,10 +68,8 @@ class Careers extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'position' => '工作岗位',
-			'job' => '工作职责',
-			'requirement' => '工作要求',
-			'detail' => '详情',
+			'title' => '标题',
+			'content' => '内容',
 			'create_time' => '创建时间',
 			'update_time' => '修改时间',
 		);
@@ -91,10 +87,8 @@ class Careers extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('position',$this->position,true);
-		$criteria->compare('job',$this->job,true);
-		$criteria->compare('requirement',$this->requirement,true);
-		$criteria->compare('detail',$this->detail,true);
+		$criteria->compare('title',$this->title,true);
+		$criteria->compare('content',$this->content,true);
 		$criteria->compare('create_time',$this->create_time);
 		$criteria->compare('update_time',$this->update_time);
 
@@ -104,18 +98,14 @@ class Careers extends CActiveRecord
 	}
 	
 	
+	
 	public function attributeWidgets()
 	{
 		return array(
-				array('position', 'textField'), // For choices create variable name proffesion_idChoices
-				array('job','textArea'),
-				array('requirement','textArea'),
-				array('detail','textArea'),
-				
+				array('title', 'textField'), // For choices create variable name proffesion_idChoices
+				array('content','textArea'),
 		);
 	}
-	
-
 	
 	public function adminSearch()
 	{
@@ -124,10 +114,8 @@ class Careers extends CActiveRecord
 				//'dataProvider'=>$this->search(),
 				'columns'=>array(
 						'id',
-						'position',
-						'job',
-						'requirement',
-						'detail',						
+						'title',
+						'content',
 						 array(
 		                    'name'=>'create_time',
 						 	'type'=>'html',
@@ -137,13 +125,11 @@ class Careers extends CActiveRecord
 							'name'=>'update_time',
 							'type'=>'html',
 							'value'=>'date("Y-m-d H:i:s",$data->update_time)',
-						),					
-						
+						),
 	
 				),
 		);
 	}
-	
 	
 	protected function beforeSave()
 	{
@@ -155,7 +141,7 @@ class Careers extends CActiveRecord
 		else
 		{
 			$this->update_time=$this->create_time;
-			
+				
 		}
 		return true;
 	

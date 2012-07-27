@@ -19,6 +19,7 @@ $cs->registerCssFile($baseUrl.'/css/base.css');
 	<ul class="nav">
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "About"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/About');?>">公司简介</a></li>
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Hairstylist"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Hairstylist');?>">发型师</a></li>
+		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Knowledge"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Knowledge');?>">美发常识</a></li>
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Hairstyleshow"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Hairstyleshow');?>">发型展示</a></li>
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Hairproducts"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Hairproducts');?>">发型产品</a></li>
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Join"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Join');?>">在线加盟</a></li>

@@ -166,3 +166,31 @@ DIV.digg SPAN.disabled {border: #eee 1px solid;padding: 5px;margin: 2px;color: #
 #box3 .box3_m00{height:350px;padding:0px 10px 0px 10px;line-height:25px;color:#fff;}
 
 
+/* careers */
+.careers-content{
+	padding:10px 0 20px 0px;
+}
+.careers-content h3{
+	font-size: 14px;
+	font-weight: bold;	
+}
+.careers-content p{
+	line-height:30px;
+}
+.careers-content .careers-detail{
+	padding-left: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
