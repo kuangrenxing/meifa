@@ -9,6 +9,9 @@
  */
 class Join extends CActiveRecord
 {
+	public $adminName="在线加盟";
+	public $pluralNames=array('0'=>'在线加盟');
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -60,7 +63,7 @@ class Join extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'content' => 'Content',
+			'content' => '内容',
 		);
 	}
 
@@ -81,5 +84,26 @@ class Join extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	
+	public function attributeWidgets()
+	{
+		return array(
+				array('content','textArea'),
+		);
+	}
+	
+	
+	public function adminSearch()
+	{
+		return array(
+				// Data provider, by default is "search()"
+				//'dataProvider'=>$this->search(),
+				'columns'=>array(
+						'id',
+						'content',	
+				),
+		);
 	}
 }

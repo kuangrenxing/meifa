@@ -86,7 +86,7 @@ class ManageModelController extends YAdminController
             $this->widget('zii.widgets.grid.CGridView',$listData); 
             Yii::app()->end();
         }
-
+        
         $this->render('list_objects',array(
             'title'=>$this->module->getModelNamePlural($model),
             'model'=>$model, 

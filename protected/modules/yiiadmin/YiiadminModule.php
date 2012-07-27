@@ -254,9 +254,15 @@ class YiiadminModule extends CWebModule
             $model=new $model; 
 
         if (!isset($model->pluralNames))
-            return get_class($model);
+        {
+        	return get_class($model);
+        }            
         else
-            return $model->pluralNames[$pos];
+        {
+        	return $model->pluralNames[$pos];
+        
+        }
+            
     }
 
 	/**

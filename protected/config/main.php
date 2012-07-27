@@ -50,6 +50,7 @@ return array(
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -66,7 +67,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=meifa',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'public',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		
@@ -98,6 +99,7 @@ return array(
 		'adminEmail'=>'chenxin448@126.com',
 		'companyname'=>'这是公司名',
 		'upload'=>'upload',//上传文件夹
+		'uploadUrl'=>'protected'.DIRECTORY_SEPARATOR.'upload',//上传文件夹'
 		'avatar'=>'upload'.DIRECTORY_SEPARATOR.'avatar',//头像路径
 		'picture'=>'upload'.DIRECTORY_SEPARATOR.'picture',//照片路径
 		
