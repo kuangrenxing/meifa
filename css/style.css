@@ -83,7 +83,15 @@ body{font-family:"宋体",Arail,verdana;font-size:12px;line-height:1.5em;color:#
 
 #newslist2 {list-style-image:none;text-align:left;font-size:12px;}
 #newslist2 ul{}
-#newslist2 li {display:block;line-height:20px;}/* solid为实线 dashed为虚线 */
+#newslist2 li {
+	display:block;
+	line-height:20px;
+	width:250px;
+	white-space:nowrap; 
+	text-overflow:ellipsis;  
+	-o-text-overflow:ellipsis;  
+	overflow: hidden;    
+	}/* solid为实线 dashed为虚线 */
 #newslist2 a {color:#CCCCCC; text-decoration:none; }
 #newslist2 a:hover {color:#ff6801;}
 

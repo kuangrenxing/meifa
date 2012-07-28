@@ -29,7 +29,42 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		
+		//关于我们
+		$about=About::model()->find(array('order'=>'id desc'));
+		
+		//发型师
+		$hairstylist = Hairstylist::model()->findAll(array(
+				'order'=>'sequence asc,id asc',
+				));
+		//发型
+		$hairstyleshow = Hairstyleshow::model()->findAll(array(
+				'order'=>'sequence desc,id desc',
+			));
+		
+		//活动
+		$specialoffers = Specialoffers::model()->findAll(array(
+				'order'=>'update_time desc',
+				));
+		
+		//知识
+		$knowledge = Knowledge::model()->findAll(array(
+				'order'=>'update_time desc',
+				));
+		//产品
+		$hairproducts = Hairproducts::model()->findAll(array(
+				'order'=>'id desc'
+				));
+			
+		
+		$this->render('index',array(
+				'about'=>$about,
+				'hairstylist'=>$hairstylist,
+				'hairstyleshow'=>$hairstyleshow,
+				'specialoffers'=>$specialoffers,
+				'knowledge'=>$knowledge,
+				'hairproducts'=>$hairproducts,
+				));
 	}
 
 	/**

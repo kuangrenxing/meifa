@@ -38,10 +38,11 @@ class About extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('content', 'required'),
+			array('preface,content', 'required'),
+			array('preface', 'length', 'max'=>400),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, content', 'safe', 'on'=>'search'),
+			array('id, preface, content', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,6 +65,7 @@ class About extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'preface'=>'序言',
 			'content' => '内容',
 		);
 	}
@@ -80,6 +82,7 @@ class About extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('preface',$this->preface,true);
 		$criteria->compare('content',$this->content,true);
 
 		return new CActiveDataProvider($this, array(
@@ -89,7 +92,9 @@ class About extends CActiveRecord
 	public function attributeWidgets()
     {
         return array(
-            array('content', 'textArea'), // For choices create variable name proffesion_idChoices
+        		array('preface', 'textField'),
+        		array('content', 'textArea'), // For choices create variable name proffesion_idChoices
+        	
         );
     }
 	public function adminSearch()
@@ -99,6 +104,7 @@ class About extends CActiveRecord
                 //'dataProvider'=>$this->search(),
                 'columns'=>array(
                 'id',
+                'preface',
                 'content',
             ),
         );

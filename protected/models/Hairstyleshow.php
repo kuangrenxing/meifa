@@ -44,6 +44,7 @@ class Hairstyleshow extends CActiveRecord
 		return array(
 			array('category, picture, hairstylename, price, detail', 'required','on'=>'create'),
 			array('price', 'numerical', 'integerOnly'=>true),
+			array('sequence', 'length', 'max'=>6),
 			array('category, hairstylename', 'length', 'max'=>64),
 			array('picture', 'length', 'max'=>255),
 			
@@ -73,6 +74,7 @@ class Hairstyleshow extends CActiveRecord
 			'id' => 'ID',
 			'category' => '种类',
 			'picture' => '图片',
+			'sequence'=>'顺序',
 			'hairstylename' => '发型名',
 			'price' => '价格',
 			'detail' => '详情',
@@ -92,6 +94,7 @@ class Hairstyleshow extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('category',$this->category,true);
+		$criteria->compare('sequence',$this->sequence,true);
 		$criteria->compare('picture',$this->picture,true);
 		$criteria->compare('hairstylename',$this->hairstylename,true);
 		$criteria->compare('price',$this->price);
@@ -107,6 +110,7 @@ class Hairstyleshow extends CActiveRecord
 	{
 		return array(
 				array('category', 'textField'), // For choices create variable name proffesion_idChoices
+				array('sequence', 'textField'),
 				array('picture','textField'),
 				array('hairstylename','textField'),
 				array('price','textField'),
@@ -129,9 +133,10 @@ class Hairstyleshow extends CActiveRecord
 				//'dataProvider'=>$this->search(),
 				'columns'=>array(
 						'id',
-						'category',
-						'picture',
 						'hairstylename',
+						'category',						
+						'picture',						
+						'sequence',
 						'price',
 						'picture',
 						'detail',
@@ -139,5 +144,17 @@ class Hairstyleshow extends CActiveRecord
 	
 				),
 		);
+	}
+	
+	
+	public function afterSave()
+	{
+		if($this->isNewRecord)
+		{
+			if($this->sequence=="" || $this->sequence == 0)
+			{
+				Hairstyleshow::model()->updateByPk($this->id, array('sequence'=>$this->id));
+			}
+		}
 	}
 }
