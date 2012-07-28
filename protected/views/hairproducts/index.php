@@ -37,24 +37,9 @@
     <td class="box2_m" align="left" valign="top">
 
 <ul id="sidebar">
-
-<!--<li><a href="products.asp?bid=25&bname=美发产品" >美发产品</a></li>-->
-
-<li class="small"><a href="http://t.mobanku.com/00846/products.asp?bid=25&sid=175&sname=%E5%8F%91%E8%83%B6">发胶</a>
-
-
-<!-- 显示小类数量 -->
-
-
-</li>
-
-<li class="small"><a href="http://t.mobanku.com/00846/products.asp?bid=25&sid=176&sname=%E5%95%AB%E5%96%B1%E6%B0%B4">啫喱水</a>
-
-
-<!-- 显示小类数量 -->
-
-
-</li>
+<?php foreach(($category) as $v):	?>
+<li class="small"><a href="<?php echo Yii::app()->createUrl("hairproducts/index",array("category"=>$v));?>"><?php echo $v;?></a></li>
+<?php endforeach;?>
 
 </ul>
 </td>
@@ -96,8 +81,7 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
     	<tbody>
     	<?php 
-    	header("content-type:text/html;charset=utf-8");
-    	print_r( $model['0']->uploadFields['picture']);
+    	
 
     	foreach($model as $i=>$v):?>
 			<?php if($i%4==0):?>
@@ -105,11 +89,13 @@
 			<?php endif;?>
 			<td align="left" valign="top">					
 				<div class="product_product_img">
-				<img src="<?php echo Yii::app()->baseUrl.DIRECTORY_SEPARATOR.Yii::app()->params['uploadUrl'].DIRECTORY_SEPARATOR.$model['0']->uploadFields['picture'].DIRECTORY_SEPARATOR.$v['picture'];?>" width="160" height="132" border="0">
+				<a href="<?php echo Yii::app()->createUrl('hairproducts/view',array('id'=>$v['id']));?>">
+					<img src="<?php echo Yii::app()->baseUrl.DIRECTORY_SEPARATOR.Yii::app()->params['uploadUrl'].DIRECTORY_SEPARATOR.$model['0']->uploadFields['picture'].DIRECTORY_SEPARATOR.$v['picture'];?>" width="160" height="132" border="0">
+				</a>	
 					<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
 				         <tbody><tr>
 				            <td valign="top" align="left">		
-				 				<a href="http://t.mobanku.com/00846/productshow.asp?id=305&bid=25&sid=175&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
+				 				<a href="<?php echo Yii::app()->createUrl('hairproducts/view',array('id'=>$v['id']));?>"><img src="./images/bg2.gif" width="164" height="136"></a>			
 							 </td>
 				         	</tr>
 				    	</tbody>
@@ -119,320 +105,34 @@
 				<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=305&bid=25&sid=175"><?php echo $v['name'];?></a></p>
 				<p class="product_List_marketprice">市场价：<span><?php echo $v['price'];?>元</span></p>
 				
-				<p class="product_list_introduce"><a href="<?php echo Yii::app()->createUrl('hairproducts/view',array('id'=>$v['id']));?>">详细情况</a></p>
+				<p class="product_list_introduce"><?php echo substr(strip_tags($v['detail']), 0,9);?>……</p>
 
 				</div>
 			</td>
 			<?php if(($i+1)%4==0):?>
-			
+				</tr>
+				<tr><td height="1" colspan="2"></td></tr>
 			<?php endif;?>
     	<?php endforeach;?>
     	<tr>
-			<td align="left" valign="top">					
-				<div class="product_product_img">
-				<img src="./images/s_013.jpg" width="160" height="132" border="0">
-					<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
-				         <tbody><tr>
-				            <td valign="top" align="left">		
-				 				<a href="http://t.mobanku.com/00846/productshow.asp?id=305&bid=25&sid=175&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
-							 </td>
-				         	</tr>
-				    	</tbody>
-				    </table> 
-				</div>
-				<div id="product_detail">
-				<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=305&bid=25&sid=175">平面模特</a></p>
-				<p class="product_List_marketprice">市场价：<span>￥.00元</span></p>
-				<p class="product_List_memberprice">会员价：<span>￥.00元</span></p>
-				<p class="product_list_introduce">……</p>
-
-				</div>
-			</td>
-<!-- product list page number -->
-
-                    
-                            <td align="left" valign="top">
-							
-							
-						
-<div class="product_product_img">
-
-
-<img src="./images/s_012.jpg" width="160" height="132" border="0">
-	<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
-         <tbody><tr>
-            <td valign="top" align="left">
-	        
-			
- <a href="http://t.mobanku.com/00846/productshow.asp?id=304&bid=25&sid=175&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
-			 
-			 
-			 
-			 </td>
-         </tr>
-    </tbody></table> 
-</div>
-<div id="product_detail">
-
-
-<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=304&bid=25&sid=175">平面模特</a></p>
-<p class="product_List_marketprice">市场价：<span>￥.00元</span></p>
-<p class="product_List_memberprice">会员价：<span>￥.00元</span></p>
-<p class="product_list_introduce">……</p>
-
-</div>
-
-
-
-
-		  
-							  
-						    </td>
-<!-- product list page number -->
-
-                    
-                            <td align="left" valign="top">
-							
-							
-						
-<div class="product_product_img">
-
-
-<img src="./images/s_015.jpg" width="160" height="132" border="0">
-	<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
-         <tbody><tr>
-            <td valign="top" align="left">
-	        
-			
- <a href="http://t.mobanku.com/00846/productshow.asp?id=303&bid=25&sid=176&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
-			 
-			 
-			 
-			 </td>
-         </tr>
-    </tbody></table> 
-</div>
-<div id="product_detail">
-
-
-<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=303&bid=25&sid=176">平面模特</a></p>
-<p class="product_List_marketprice">市场价：<span>￥.00元</span></p>
-<p class="product_List_memberprice">会员价：<span>￥.00元</span></p>
-<p class="product_list_introduce">……</p>
-
-</div>
-
-
-
-
-		  
-							  
-						    </td>
-<!-- product list page number -->
-
-                    
-                            <td align="left" valign="top">
-							
-							
-						
-<div class="product_product_img">
-
-
-<img src="./images/s_014.jpg" width="160" height="132" border="0">
-	<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
-         <tbody><tr>
-            <td valign="top" align="left">
-	        
-			
- <a href="http://t.mobanku.com/00846/productshow.asp?id=302&bid=25&sid=176&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
-			 
-			 
-			 
-			 </td>
-         </tr>
-    </tbody></table> 
-</div>
-<div id="product_detail">
-
-
-<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=302&bid=25&sid=176">平面模特</a></p>
-<p class="product_List_marketprice">市场价：<span>￥.00元</span></p>
-<p class="product_List_memberprice">会员价：<span>￥.00元</span></p>
-<p class="product_list_introduce">……</p>
-
-</div>
-
-
-
-
-		  
-							  
-						    </td>
-<!-- product list page number -->
-
-                    </tr><tr><td height="1" colspan="2"></td></tr><tr>
-                            <td align="left" valign="top">
-							
-							
-						
-<div class="product_product_img">
-
-
-<img src="./images/s_015.jpg" width="160" height="132" border="0">
-	<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
-         <tbody><tr>
-            <td valign="top" align="left">
-	        
-			
- <a href="http://t.mobanku.com/00846/productshow.asp?id=301&bid=25&sid=176&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
-			 
-			 
-			 
-			 </td>
-         </tr>
-    </tbody></table> 
-</div>
-<div id="product_detail">
-
-
-<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=301&bid=25&sid=176">平面模特</a></p>
-<p class="product_List_marketprice">市场价：<span>￥.00元</span></p>
-<p class="product_List_memberprice">会员价：<span>￥.00元</span></p>
-<p class="product_list_introduce">……</p>
-
-</div>
-
-
-
-
-		  
-							  
-						    </td>
-<!-- product list page number -->
-
-                    
-                            <td align="left" valign="top">
-							
-							
-						
-<div class="product_product_img">
-
-
-<img src="./images/s_014.jpg" width="160" height="132" border="0">
-	<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
-         <tbody><tr>
-            <td valign="top" align="left">
-	        
-			
- <a href="http://t.mobanku.com/00846/productshow.asp?id=300&bid=25&sid=176&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
-			 
-			 
-			 
-			 </td>
-         </tr>
-    </tbody></table> 
-</div>
-<div id="product_detail">
-
-
-<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=300&bid=25&sid=176">平面模特</a></p>
-<p class="product_List_marketprice">市场价：<span>￥.00元</span></p>
-<p class="product_List_memberprice">会员价：<span>￥.00元</span></p>
-<p class="product_list_introduce">……</p>
-
-</div>
-
-
-
-
-		  
-							  
-						    </td>
-<!-- product list page number -->
-
-                    
-                            <td align="left" valign="top">
-							
-							
-						
-<div class="product_product_img">
-
-
-<img src="./images/s_013.jpg" width="160" height="132" border="0">
-	<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
-         <tbody><tr>
-            <td valign="top" align="left">
-	        
-			
- <a href="http://t.mobanku.com/00846/productshow.asp?id=299&bid=25&sid=175&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
-			 
-			 
-			 
-			 </td>
-         </tr>
-    </tbody></table> 
-</div>
-<div id="product_detail">
-
-
-<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=299&bid=25&sid=175">平面模特</a></p>
-<p class="product_List_marketprice">市场价：<span>￥.00元</span></p>
-<p class="product_List_memberprice">会员价：<span>￥.00元</span></p>
-<p class="product_list_introduce">……</p>
-
-</div>
-
-
-
-
-		  
-							  
-						    </td>
-<!-- product list page number -->
-
-                    
-                            <td align="left" valign="top">
-							
-							
-						
-<div class="product_product_img">
-
-
-<img src="./images/s_012.jpg" width="160" height="132" border="0">
-	<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
-         <tbody><tr>
-            <td valign="top" align="left">
-	        
-			
- <a href="http://t.mobanku.com/00846/productshow.asp?id=298&bid=25&sid=175&product_name=%E5%B9%B3%E9%9D%A2%E6%A8%A1%E7%89%B9"><img src="./images/bg2.gif" width="164" height="136"></a>			
-			 
-			 
-			 
-			 </td>
-         </tr>
-    </tbody></table> 
-</div>
-<div id="product_detail">
-
-
-<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=298&bid=25&sid=175">平面模特</a></p>
-<p class="product_List_marketprice">市场价：<span>￥.00元</span></p>
-<p class="product_List_memberprice">会员价：<span>￥.00元</span></p>
-<p class="product_list_introduce">……</p>
-
-</div>
-
-
-
-
-		  
-							  
-						    </td>
-<!-- product list page number -->
-
-                    </tr><tr><td height="1" colspan="2"></td></tr><tr>
                         </tr></tbody></table>
-<div class="digg">共8&nbsp;&nbsp;<span class="current">下一页</span><span class="current">尾页</span>&nbsp;页码：<span class="current">1</span>&nbsp;</div></td>
+<div class="digg">
+	<div id="pager">
+	<?php
+	$this->widget('CLinkPager',array(
+		'header'=>'',
+		'firstPageLabel' => '首页',
+		'lastPageLabel' => '末页',
+		'prevPageLabel' => '上一页',
+		'nextPageLabel' => '下一页',
+		'pages' => $pages,
+		'maxButtonCount'=>10
+		)
+	);
+	?>
+	</div>
+
+</div></td>
   </tr>
 </tbody></table>
 	<!--内页详细 结束-->

@@ -97,7 +97,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'chenxin448@126.com',
-		'companyname'=>'这是公司名',
+		'companyname'=>'鼎峰国际',
 		'upload'=>'upload',//上传文件夹
 		'uploadUrl'=>'protected'.DIRECTORY_SEPARATOR.'upload',//上传文件夹'
 		'avatar'=>'upload'.DIRECTORY_SEPARATOR.'avatar',//头像路径
