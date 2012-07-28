@@ -182,7 +182,22 @@ DIV.digg SPAN.disabled {border: #eee 1px solid;padding: 5px;margin: 2px;color: #
 }
 
 
-
+/* knowledge*/
+    .know-list .know-title{
+    	width:400px;    	
+    	display:block;
+    	float:left;
+    	height:25px;    	
+    	white-space:nowrap; 
+		text-overflow:ellipsis;  
+		-o-text-overflow:ellipsis;  
+		overflow: hidden;    	
+    }
+    .know-list .know-time{
+    	display:block;
+    	float:right;
+    	padding-right:10px;
+    }
 
 
 

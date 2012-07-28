@@ -41,12 +41,13 @@ class Knowledge extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content', 'required'),
+			array('title,category, content', 'required'),
 			//array('create_time, update_time', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>256),
+			array('category', 'length', 'max'=>64),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, content, create_time, update_time', 'safe', 'on'=>'search'),
+			array('id, title,category, content, create_time, update_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,6 +70,7 @@ class Knowledge extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'title' => '标题',
+			'category'=>'文章类型',
 			'content' => '内容',
 			'create_time' => '创建时间',
 			'update_time' => '修改时间',
@@ -88,6 +90,7 @@ class Knowledge extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
+		$criteria->compare('category',$this->category,true);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('create_time',$this->create_time);
 		$criteria->compare('update_time',$this->update_time);
@@ -104,6 +107,7 @@ class Knowledge extends CActiveRecord
 		return array(
 				array('title', 'textField'), // For choices create variable name proffesion_idChoices
 				array('content','textArea'),
+				array('category','textField'),
 		);
 	}
 	
@@ -115,6 +119,7 @@ class Knowledge extends CActiveRecord
 				'columns'=>array(
 						'id',
 						'title',
+						'category',
 						'content',
 						 array(
 		                    'name'=>'create_time',
