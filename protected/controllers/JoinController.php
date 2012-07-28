@@ -127,9 +127,11 @@ class JoinController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Join');
+		$model=Join::model()->find(array(
+		    'order'=>'id desc',
+		));
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+			'model'=>$model,
 		));
 	}
 
