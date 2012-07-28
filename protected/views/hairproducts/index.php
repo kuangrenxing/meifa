@@ -1,18 +1,4 @@
 
-
-<?php
-//  $this->widget('zii.widgets.CListView', array(
-// 	'dataProvider'=>$dataProvider,
-// 	'itemView'=>'_view',
-// )); 
- ?>
-
-
-
-
-
-
-
 <div id="mainbox_bg" style="width:1000px; margin:0px auto;">
 
 

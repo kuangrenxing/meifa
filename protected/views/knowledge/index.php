@@ -43,19 +43,39 @@
   </tr>
   <tr>
     <td class="box3_m0" align="left" valign="top">
-    <ul class="know-list">
-    <?php foreach ($model as $i=>$v):?>
-    	<li>
-	    	<a href="<?php echo Yii::app()->createUrl('knowledge/view',array('id'=>$v['id']));?>">
-		    	<span class="know-title"><?php echo $v['title'];?></span>
-		    	<span class="know-time"><?php echo date('Y-m-d H:i',$v['create_time']);?></span>
-	    	</a>
-    	</li>
-    <?php endforeach;?>
-    	
-    </ul>
-
     
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tbody>
+	    <tr><td>
+		    <ul class="know-list">
+		    <?php foreach ($model as $i=>$v):?>
+		    	<li>
+			    	<a href="<?php echo Yii::app()->createUrl('knowledge/view',array('id'=>$v['id']));?>">
+				    	<span class="know-title"><?php echo $v['title'];?></span>
+				    	<span class="know-time"><?php echo date('Y-m-d H:i',$v['create_time']);?></span>
+			    	</a>
+		    	</li>
+		    <?php endforeach;?>   
+		    </ul>
+	    </td></tr>
+ 	</tbody>
+    </table>
+    			<div class="digg">
+				<div id="pager">
+				<?php
+				$this->widget('CLinkPager',array(
+					'header'=>'',
+					'firstPageLabel' => '首页',
+					'lastPageLabel' => '末页',
+					'prevPageLabel' => '上一页',
+					'nextPageLabel' => '下一页',
+					'pages' => $pages,
+					'maxButtonCount'=>10
+					)
+				);
+				?>
+				</div>
+			</div>
     </td>
   </tr>
 </tbody></table>

@@ -127,10 +127,29 @@ class SpecialoffersController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Specialoffers');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+		//分页
+		$criteria = new CDbCriteria();
+		$criteria->order="create_time desc";
+		
+		if(isset($_GET['category']))
+		{			
+			$criteria->addCondition("category = :category");
+			$criteria->params[':category'] = $_GET['category'];
+		}
+		
+	    $count=Specialoffers::model()->count($criteria);  
+	    $pages=new CPagination($count);  
+	  
+	    
+	     $pages->pageSize=YII_DEBUG ? 4:10;  
+	     $pages->applyLimit($criteria);  
+	     $model = Specialoffers::model()->findAll($criteria);  
+	  
+	    $this->render('index', array(  
+	     	'model' => $model,  
+	        'pages' => $pages,
+	    	
+	     ));  
 	}
 
 	/**

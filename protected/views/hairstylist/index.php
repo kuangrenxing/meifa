@@ -68,10 +68,10 @@
     <td class="box3_t2"></td>
   </tr>
   <tr>
-    <td class="box3_m00" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tbody>    	<?php 
-    	
-
+    <td class="box3_m00" align="left" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+        <?php
     	foreach($model as $i=>$v):?>
 			<?php if($i%4==0):?>
 				<tr>
@@ -103,22 +103,23 @@
 				<tr><td height="1" colspan="2"></td></tr>
 			<?php endif;?>
     	<?php endforeach;?></tbody></table>
-<div class="digg">
-	<div id="pager">
-	<?php
-	$this->widget('CLinkPager',array(
-		'header'=>'',
-		'firstPageLabel' => '首页',
-		'lastPageLabel' => '末页',
-		'prevPageLabel' => '上一页',
-		'nextPageLabel' => '下一页',
-		'pages' => $pages,
-		'maxButtonCount'=>10
-		)
-	);
-	?>
-	</div>
-</div></td>
+			<div class="digg">
+				<div id="pager">
+				<?php
+				$this->widget('CLinkPager',array(
+					'header'=>'',
+					'firstPageLabel' => '首页',
+					'lastPageLabel' => '末页',
+					'prevPageLabel' => '上一页',
+					'nextPageLabel' => '下一页',
+					'pages' => $pages,
+					'maxButtonCount'=>10
+					)
+				);
+				?>
+				</div>
+			</div>
+</td>
   </tr>
 </tbody></table>
 	<!--内页详细 结束-->

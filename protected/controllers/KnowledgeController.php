@@ -158,7 +158,7 @@ class KnowledgeController extends Controller
 	    $pages=new CPagination($count);  
 	  
 	    
-	     $pages->pageSize=YII_DEBUG ? 4:8;  
+	     $pages->pageSize=YII_DEBUG ? 4:10;  
 	     $pages->applyLimit($criteria);  
 	     $model = Knowledge::model()->findAll($criteria);  
 	  
