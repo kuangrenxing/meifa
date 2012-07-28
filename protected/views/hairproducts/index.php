@@ -37,6 +37,7 @@
     <td class="box2_m" align="left" valign="top">
 
 <ul id="sidebar">
+<li class="small"><a href="<?php echo Yii::app()->createUrl("hairproducts/index");?>">全部</a></li>
 <?php foreach(($category) as $v):	?>
 <li class="small"><a href="<?php echo Yii::app()->createUrl("hairproducts/index",array("category"=>$v));?>"><?php echo $v;?></a></li>
 <?php endforeach;?>

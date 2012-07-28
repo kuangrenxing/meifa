@@ -49,8 +49,9 @@ class HairproductsController extends Controller
 	 * @param integer $id the ID of the model to be displayed
 	 */
 	public function actionView($id)
-	{
+	{		
 		//产品种类
+		$category=array();
 		$hairproducts = Hairproducts::model()->findAll();
 		foreach($hairproducts as $v)
 		{
@@ -135,6 +136,7 @@ class HairproductsController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$category=array();
 		//产品种类
 		$hairproducts = Hairproducts::model()->findAll();
 		foreach($hairproducts as $v)

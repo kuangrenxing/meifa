@@ -50,8 +50,17 @@ class HairstylistController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$category=array();
+		//产品种类
+		$hairstylist = Hairstylist::model()->findAll();
+		foreach($hairstylist as $v)
+		{
+			$category[]=$v['category'];
+		}
+		
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+			'category'=>array_unique($category),
 		));
 	}
 
@@ -173,10 +182,36 @@ class HairstylistController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Hairstylist');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+		$category=array();
+		//产品种类
+		$hairstylist = Hairstylist::model()->findAll();
+		foreach($hairstylist as $v)
+		{
+			$category[]=$v['category'];
+		}
+		
+		//分页
+		$criteria = new CDbCriteria();
+		
+		if(isset($_GET['category']))
+		{			
+			$criteria->addCondition("category = :category");
+			$criteria->params[':category'] = $_GET['category'];
+		}
+		
+	    $count=Hairstylist::model()->count($criteria);  
+	    $pages=new CPagination($count);  
+	  
+	    
+	     $pages->pageSize=YII_DEBUG ? 4:8;  
+	     $pages->applyLimit($criteria);  
+	     $model = Hairstylist::model()->findAll($criteria);  
+	  
+	    $this->render('index', array(  
+	     	'model' => $model,  
+	        'pages' => $pages,
+	    	'category'=>array_unique($category),  
+	     ));  
 	}
 
 	/**

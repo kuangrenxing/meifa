@@ -44,7 +44,7 @@ class Hairstylist extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, sex, address, avatar, picture, motto, detail', 'required', 'on'=>'create'),
+			array('name, sex, address, avatar,category, picture, motto, detail', 'required', 'on'=>'create'),
 			array('name', 'length', 'max'=>32),
 			array('sex', 'length', 'max'=>2),
 			array('address', 'length', 'max'=>128),
@@ -54,7 +54,7 @@ class Hairstylist extends CActiveRecord
 			array('picture', 'file','allowEmpty'=>false,'on'=>'create','types'=>'jpg, gif, png','maxSize'=>1024 * 1024 * 1), // 1MB'tooLarge'=>'The file was larger than 1MB. Please upload a smaller file.',)
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('detail','safe'),
+			array('detail,category','safe'),
 			array('id, name, sex, address, avatar, picture, motto, detail', 'safe', 'on'=>'search'),
 		);
 	}
@@ -80,6 +80,7 @@ class Hairstylist extends CActiveRecord
 			'name' => '发型师',
 			'sex' => '性别',
 			'address' => '地址',
+			'category'=>'级别',
 			'avatar' => '头像',
 			'picture' => '照片',
 			'motto' => '座右铭',
@@ -104,6 +105,7 @@ class Hairstylist extends CActiveRecord
 		$criteria->compare('address',$this->address,true);
 		$criteria->compare('avatar',$this->avatar,true);
 		$criteria->compare('picture',$this->picture,true);
+		$criteria->compare('category',$this->category,true);
 		$criteria->compare('motto',$this->motto,true);
 		$criteria->compare('detail',$this->detail,true);
 
@@ -118,6 +120,7 @@ class Hairstylist extends CActiveRecord
 				array('name', 'textField'), // For choices create variable name proffesion_idChoices
 				array('sex','dropDownList'),
 				array('address','textField'),
+				array('category','textField'),
 				array('avatar','fileField'),
 				array('picture','fileField'),
 				array('motto','textField'),
@@ -145,6 +148,7 @@ class Hairstylist extends CActiveRecord
 						'id',
 						'name',
 						'sex',
+						'category',
 						'address',
 						'avatar',
 						'picture',
