@@ -36,24 +36,29 @@ class SiteController extends Controller
 		//发型师
 		$hairstylist = Hairstylist::model()->findAll(array(
 				'order'=>'sequence asc,id asc',
+				'limit'=>'4',
 				));
 		//发型
 		$hairstyleshow = Hairstyleshow::model()->findAll(array(
 				'order'=>'sequence desc,id desc',
+				'limit'=>'4',
 			));
 		
 		//活动
 		$specialoffers = Specialoffers::model()->findAll(array(
 				'order'=>'update_time desc',
+				'limit'=>'7',
 				));
 		
 		//知识
 		$knowledge = Knowledge::model()->findAll(array(
 				'order'=>'update_time desc',
+				'limit'=>'17',
 				));
 		//产品
 		$hairproducts = Hairproducts::model()->findAll(array(
-				'order'=>'id desc'
+				'order'=>'id desc',
+				'limit'=>'4',
 				));
 			
 		

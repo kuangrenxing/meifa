@@ -238,7 +238,7 @@
 <table width="700" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-left:7px;margin-top:18px;">
 	<tbody>
 	<tr>
-    	<td align="left" valign="top" class="box0_t">名师风采</td>
+    	<td align="left" valign="top" class="box0_t"><a target="_blank" href="<?php echo Yii::app()->createUrl('hairstylist');?>">名师风采</a></td>
   	</tr>
   	<tr>
     	<td align="left" valign="top" class="box0_m"><table width="100%" border="0" cellspacing="2" cellpadding="2">
@@ -246,7 +246,7 @@
 		<tr>
 		<?php
 		foreach($hairstylist as $i=>$v): 
-		if($i>3)	break;
+		
 			
 		?>
 			<td>
@@ -304,7 +304,7 @@
   <tr>
   <?php 
   foreach ($hairstyleshow as $i=>$v):
-  if($i>3) break;
+  
   ?>
   <td>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -358,7 +358,7 @@
   <tr>
   <?php 
   foreach ($hairproducts as $i=>$v):
-  if($i>3) break;
+  
   ?>
     <td>
 	    <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -416,7 +416,7 @@
 
 		<!--最新动? begin-->
 
-	<table width="270" border="0" cellspacing="0" cellpadding="0" id="box1">
+	<table width="270" height="287" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-top: 14px;">
 
   <tbody><tr>
 
@@ -428,43 +428,15 @@
 
     <td align="left" valign="top" class="box0_m">
 
-<table width="250" border="0" cellspacing="0" cellpadding="0" align="center">
+<table width="250"  border="0" cellspacing="0" cellpadding="0" align="center">
 
   <tbody><tr>
 
-    <td><script type="text/javascript">
+    <td>
+    
 
-    //imgLink3="";
-
-     var focus_width=250	
-
-     var focus_height=258
-
-     var text_height=0
-
-     var swf_height = focus_height+text_height
-
-     var pics="uploadfile/p/index/01.jpg|uploadfile/p/index/01.jpg|uploadfile/p/index/01.jpg|uploadfile/p/index/01.jpg|uploadfile/p/index/01.jpg|uploadfile/p/index/01.jpg"
-
-     var links="about.asp|index.asp|contact.asp|sales.asp|index.asp|index.asp"
-
-     var texts="ddddd|eeeee|fffff|ggggg|qqq|qqq"
-
-     var flashCode = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/hotdeploy/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">';
-
-     flashCode = flashCode + '<param name="allowScriptAccess" value="sameDomain"/><param name="movie" value="include/focus.swf"/><param name="quality" value="high"><param name="bgcolor" value="#F0F0F0"/>';
-
-     flashCode = flashCode + '<param name="menu" value="false"/><param name="wmode" value="transparent"/>';
-
-     flashCode = flashCode + '<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'"/>';
-
-     flashCode = flashCode + '<embed src="include/focus.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="'+ focus_width +'" height="'+ swf_height +'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" wmode="transparent"/></embed>';
-
-     flashCode = flashCode + '</object>';
-
-     document.write(flashCode)
-
-</script></td>
+    
+    </td>
 
   </tr>
 
@@ -488,7 +460,7 @@
 
 		<!--最新活动  begin-->
 
-	<table width="270" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-top:10px;">
+	<table width="270" height="209" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-top:18px;">
 
   <tbody>
   <tr>
@@ -500,7 +472,7 @@
 	<ul id="newslist2">
 		<?php 
 		foreach ($specialoffers as $i=>$v):
-		if($i>6) break;
+		
 		?>
 			<li>
 				<a target="_blank" href="<?php echo Yii::app()->createUrl('specialoffers/view',array('id'=>$v['id']));?>" title="<?php echo $v['title'];?>"><?php echo $v['title'];?></a>
@@ -526,93 +498,22 @@
 
 		<!--美发知识  begin-->
 
-	<table width="270" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-top:10px;">
-
-  <tbody><tr>
-
-    <td align="left" valign="top" class="box0_t">美发知识</td>
-
-  </tr>
-
-  <tr>
-
+<table width="270" height="400" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-top:18px;">
+	<tbody>
+	<tr>
+    	<td align="left" valign="top" class="box0_t">美发知识</td>
+  	</tr>
+  	<tr>
     <td align="left" valign="top" class="box0_m"><!--  index newslist start -->
-
-<ul id="newslist2">
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=280" title="南京蒜价突破10元超过肉价 据称大蒜遭囤积炒作">南京蒜价突破10元超过肉价</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=279" title="西三角概念再起">西三角概念再起</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=278" title="发挥科技优势 加快企业发展">发挥科技优势 加快企业发展</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=277" title="义乌向全球招揽企业总部落户 两杭企已前去考察">义乌向全球招揽企业总部落户</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=276" title="首钢集团被指违反澳公司法 收购澳矿遇阻">首钢集团被指违反澳公司法 </a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=271" title="华谊兄弟 《唐山大地震》上映提振业绩">华谊兄弟 《唐山大地震》上</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=256" title="华谊兄弟 《唐山大地震》上映提振业绩">华谊兄弟 《唐山大地震》上</a>
-
-</li> 
-
-
-
-</ul>
+	<ul id="newslist2">
+		<?php 
+		foreach($knowledge as $i=>$v):
+		?>
+			<li>
+			<a target="_blank" href="<?php echo Yii::app()->createUrl('knowledge/view',array('id'=>$v['id']));?>" title="<?php echo $v['title'];?>"><?php echo $v['title'];?></a>
+			</li> 
+		<?php endforeach;?>
+	</ul>
 
 <!-- index newslist end -->
 
@@ -630,106 +531,7 @@
 
 
 
-		<!--美发动? begin-->
-
-	<table width="270" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-top:10px;">
-
-  <tbody><tr>
-
-    <td align="left" valign="top" class="box0_t">美发动</td>
-
-  </tr>
-
-  <tr>
-
-    <td align="left" valign="top" class="box0_m"><!--  index newslist start -->
-
-<ul id="newslist2">
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=270" title="关于如何保养自己的秀发，美眉最爱">关于如何保养自己的秀发，美</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=269" title="关于如何保养自己的秀发，美眉最爱">关于如何保养自己的秀发，美</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=268" title="关于如何保养自己的秀发，美眉最爱">关于如何保养自己的秀发，美</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=267" title="关于如何保养自己的秀发，美眉最爱">关于如何保养自己的秀发，美</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=266" title="关于如何保养自己的秀发，美眉最爱">关于如何保养自己的秀发，美</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=265" title="关于如何保养自己的秀发，美眉最爱">关于如何保养自己的秀发，美</a>
-
-</li> 
-
-
-
-<li>
-
-
-
-	<a target="_blank" href="http://t.mobanku.com/00846/news.asp?id=264" title="关于如何保养自己的秀发，美眉最爱">关于如何保养自己的秀发，美</a>
-
-</li> 
-
-
-
-</ul>
-
-<!-- index newslist end -->
-
-</td>
-
-  </tr>
-
-</tbody></table>
-
-<!--美发动?end-->		
-
+		
 	
 
 	</td>
