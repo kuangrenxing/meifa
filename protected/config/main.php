@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'鼎峰国际烫染连锁',
-	'language'=>'en',
+	'language'=>'zh_cn',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

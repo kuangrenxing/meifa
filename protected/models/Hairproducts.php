@@ -126,7 +126,7 @@ class Hairproducts extends CActiveRecord
 						array(
 								'name'=>'picture',
 								'type'=>'raw',
-								'value'=>'CHtml::image(Yii::app()->baseUrl.DIRECTORY_SEPARATOR.Yii::app()->params["uploadUrl"].DIRECTORY_SEPARATOR."hairproducts".DIRECTORY_SEPARATOR.$data->picture,"",array("width"=>"50","height"=>"40"))'
+								'value'=>'CHtml::image(Yii::app()->baseUrl."/".Yii::app()->params["uploadUrl"]."/"."hairproducts"."/".$data->picture,"",array("width"=>"50","height"=>"40"))'
 								),
 						'detail',
 				),

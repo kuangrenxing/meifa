@@ -26,7 +26,7 @@
 <!--top   beigin-->
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" id="topnav">
   <tbody><tr>
-    <td rowspan="2" class="logo" align="left" valign="top"><a href="<?php echo Yii::app()->baseUrl;?>/"><img border="0" alt="" src="<?php echo Yii::app()->baseUrl;;?>/images/logo.gif"></a></td>
+    <td rowspan="2" class="logo" align="center" valign="top"><a href="<?php echo Yii::app()->baseUrl;?>/"><img height="72" width="72" border="0" alt="" src="<?php echo Yii::app()->baseUrl;;?>/images/logo.jpg"></a></td>
     <td align="left" valign="top" class="tel">咨询热线：<span>13682100938</span></td>
   </tr>
   <tr>

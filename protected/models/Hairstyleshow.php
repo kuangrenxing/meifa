@@ -135,7 +135,11 @@ class Hairstyleshow extends CActiveRecord
 						'id',
 						'hairstylename',
 						'category',						
-						'picture',						
+						array(
+								'name'=>'picture',
+								'type'=>'raw',
+								'value'=>'CHtml::image(Yii::app()->baseUrl."/".Yii::app()->params["uploadUrl"]."/".$data->uploadFields["picture"]."/".$data->picture,"",array("width"=>"50","height"=>"40"))'
+						),					
 						'sequence',
 						'price',
 						'picture',
