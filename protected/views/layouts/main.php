@@ -1,3 +1,7 @@
+<?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.easing.1.3.js', CClientScript::POS_HEAD); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.lavalamp-1.3.5.js', CClientScript::POS_HEAD); ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -32,17 +36,17 @@
   <tr>
     <td align="right" valign="top" class="nav"><div id="global-header">
 <div class="nav">
-<ul>
-    <li><a href="<?php echo Yii::app()->baseUrl;?>/">网站首页</a></li>
-    <li class="on"><a href="<?php echo Yii::app()->createUrl("about");?>">关于我们</a></li>
-    <li><a href="<?php echo Yii::app()->createUrl("hairstylist");?>">发型艺术家</a></li>
-    <li><a href="<?php echo Yii::app()->createUrl("hairstyleshow");?>">发型展示</a></li>
-    <li><a href="<?php echo Yii::app()->createUrl("hairproducts");?>">美发产品</a></li>
-    <li><a href="<?php echo Yii::app()->createUrl("join");?>">在线加盟</a></li>
-    <li><a href="<?php echo Yii::app()->createUrl("specialoffers");?>">活动信息</a></li>
-        <li><a href="<?php echo Yii::app()->createUrl("knowledge");?>">美发知识</a></li>
-    <li><a href="<?php echo Yii::app()->createUrl("careers");?>">招贤纳士</a></li>
-    <li><a href="<?php echo Yii::app()->createUrl("contact");?>">联系我们</a></li>
+<ul id="menu">
+    <li <?php if($this->route == '/' || $this->route=='site/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->baseUrl;?>/">网站首页</a></li>
+    <li <?php if($this->route =='about/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("about");?>">关于我们</a></li>
+    <li <?php if($this->route =='hairstylist/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairstylist");?>">发型艺术家</a></li>
+    <li <?php if($this->route =='hairstyleshow/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairstyleshow");?>">发型展示</a></li>
+    <li <?php if($this->route =='hairproducts/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairproducts");?>">美发产品</a></li>
+    <li <?php if($this->route =='join/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("join");?>">在线加盟</a></li>
+    <li <?php if($this->route =='specialoffers/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("specialoffers");?>">活动信息</a></li>
+    <li <?php if($this->route =='knowledge/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("knowledge");?>">美发知识</a></li>
+    <li <?php if($this->route =='careers/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("careers");?>">招贤纳士</a></li>
+    <li <?php if($this->route =='contact/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("contact");?>">联系我们</a></li>
 </ul>
 </div>
 </div></td>
@@ -67,4 +71,17 @@
 
 
 
-</body></html>
+</body>
+
+
+
+<script type="text/javascript">
+ 
+    $(function() {
+        
+        $('ul#menu').lavaLamp({startItem: $("#menu li.on").index()});
+    });
+ 
+</script>
+
+</html>
