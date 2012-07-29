@@ -57,7 +57,12 @@ class HairstyleshowController extends Controller
 			$category[]=$v['category'];
 		}
 		
-		$this->render('view',array(
+		$models = Hairstyleshow::model()->findAll(array(
+				'order'=>'id desc',
+				));
+		
+		$this->renderPartial('view',array(
+			'models'=>$models,
 			'model'=>$this->loadModel($id),
 			'category'=>$category,
 		));

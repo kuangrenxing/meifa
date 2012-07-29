@@ -102,6 +102,8 @@ return array(
 		'uploadUrl'=>'protected'.DIRECTORY_SEPARATOR.'upload',//上传文件夹'
 		'avatar'=>'upload'.DIRECTORY_SEPARATOR.'avatar',//头像路径
 		'picture'=>'upload'.DIRECTORY_SEPARATOR.'picture',//照片路径
+		'copyright'=>'鼎峰国际烫染连锁机构',
+		'domainName'=>'http://meifa.dev',
 		
 	),
 );

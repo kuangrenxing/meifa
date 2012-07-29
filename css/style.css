@@ -207,7 +207,22 @@ DIV.digg SPAN.disabled {border: #eee 1px solid;padding: 5px;margin: 2px;color: #
     	padding-right:10px;
     }
 
+/* know view*/
+.know-viewbox .know-title {
+	line-height: 56px;
+	text-align: center;
+}
+.know-viewbox .know-title h2 {
+	font-size: 20px;
+}
 
+.know-viewbox .know-info {
+	height: 24px;
+	line-height: 17px;
+	text-align: center;
+	overflow: hidden;
+	color: #999;
+}
 
 
 

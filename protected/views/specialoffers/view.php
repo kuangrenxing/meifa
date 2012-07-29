@@ -43,12 +43,13 @@
   </tr>
   <tr>
     <td class="box3_m0" align="left" valign="top">
-    <ul class="know-list">
-    <p><?php echo $model->title;?></p>
-    <p><?php echo date('Y-m-d H:i',$model->create_time);?></p>
-    <div><?php echo $model->content;?></div>
+<div class="know-viewbox">
+    <div class="know-title"><h2><?php echo $model->title;?></h2></div>
+    <div class="know-info"><?php echo date('Y-m-d H:i',$model->create_time);?></div>
+    <div class="know-content"><?php echo $model->content;?></div>
     	
-    </ul>
+    </div>
+    
 
     
     </td>

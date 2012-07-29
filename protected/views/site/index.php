@@ -1,56 +1,44 @@
+<?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.easing.1.3.js', CClientScript::POS_HEAD); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.nivo.slider.js', CClientScript::POS_HEAD); ?>
+
+
+<?php Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/themes/default/default.css', CClientScript::POS_HEAD); ?>
+<?php Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/nivo-slider.css', CClientScript::POS_HEAD); ?>
+<?php //Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/style.css', CClientScript::POS_HEAD); ?>
+
 <!--adpic   begin-->
 
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
 
   <tbody><tr>
-
     <td align="center" valign="top">
 
-<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
+<table width="1000" height="281" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+  	<tr>
+	    <td>
+    <div id="wrapper">
+       
 
-  <tbody><tr>
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/toystory.jpg" data-thumb="images/toystory.jpg" alt="" />
+                <a href="http://dev7studios.com"><img src="images/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" /></a>
+                <img src="images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>
 
-    <td>
-    <script type="text/javascript">
-
-    //imgLink3="";
-
-     var focus_width=1000	
-
-     var focus_height=281
-
-     var text_height=0
-
-     var swf_height = focus_height+text_height
-
-     var pics="uploadfile/p/index/001.jpg|UploadFile/10113122036.jpg|UploadFile/10113122724.jpg"
-
-     var links="23|23234|www.mobanku.com"
-
-     var texts="23|234532|werwer"
-
-     var flashCode = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/hotdeploy/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">';
-
-     flashCode = flashCode + '<param name="allowScriptAccess" value="sameDomain"/><param name="movie" value="include/focus.swf"/><param name="quality" value="high"><param name="bgcolor" value="#F0F0F0"/>';
-
-     flashCode = flashCode + '<param name="menu" value="false"/><param name="wmode" value="transparent"/>';
-
-     flashCode = flashCode + '<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'"/>';
-
-     flashCode = flashCode + '<embed src="include/focus.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="'+ focus_width +'" height="'+ swf_height +'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" wmode="transparent"/></embed>';
-
-     flashCode = flashCode + '</object>';
-
-     document.write(flashCode)
-
-</script>
-<!--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/hotdeploy/flash/swflash.cab#version=6,0,0,0" width="1000" height="281"><param name="allowScriptAccess" value="sameDomain"><param name="movie" value="include/focus.swf"><param name="quality" value="high"><param name="bgcolor" value="#F0F0F0"><param name="menu" value="false"><param name="wmode" value="transparent"><param name="FlashVars" value="pics=uploadfile/p/index/001.jpg|UploadFile/10113122036.jpg|UploadFile/10113122724.jpg&amp;links=23|23234|www.mobanku.com&amp;texts=23|234532|werwer&amp;borderwidth=1000&amp;borderheight=281&amp;textheight=0"><embed src="include/focus.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1000" height="281" flashvars="pics=uploadfile/p/index/001.jpg|UploadFile/10113122036.jpg|UploadFile/10113122724.jpg&amp;links=23|23234|www.mobanku.com&amp;texts=23|234532|werwer&amp;borderwidth=1000&amp;borderheight=281&amp;textheight=0" wmode="transparent"></object>-->
-    
-    </td>
-
-  </tr>
-
-</tbody></table>
+    </div>
+	    
+	    </td>
+  	</tr>
+   </tbody>
+</table>
 
 
 
@@ -539,3 +527,10 @@
   </tr>
 
 </tbody></table>
+
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+</script>

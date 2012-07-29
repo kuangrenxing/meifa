@@ -39,7 +39,7 @@
     <li><a href="<?php echo Yii::app()->createUrl("hairstyleshow");?>">发型展示</a></li>
     <li><a href="<?php echo Yii::app()->createUrl("hairproducts");?>">美发产品</a></li>
     <li><a href="<?php echo Yii::app()->createUrl("join");?>">在线加盟</a></li>
-    <li><a href="<?php echo Yii::app()->createUrl("specialoffers");?>">优惠信息</a></li>
+    <li><a href="<?php echo Yii::app()->createUrl("specialoffers");?>">活动信息</a></li>
     <li><a href="<?php echo Yii::app()->createUrl("careers");?>">招贤纳士</a></li>
     <li><a href="<?php echo Yii::app()->createUrl("contact");?>">联系我们</a></li>
 </ul>
@@ -54,7 +54,7 @@
 <!--版权  开始-->
 <table width="980" border="0" align="center" cellpadding="0" cellspacing="0" id="footer">
   <tbody><tr>
-    <td class="copyright">Copyright © 2010&nbsp;<a href="http://www.xxx.cn/">美</a>力极国际美发连锁机构 All Rights Reserved.Copyright</td>
+    <td class="copyright">Copyright © 2012&nbsp;<a href="<?php echo Yii::app()->params['domainName'];?>"><?php echo Yii::app()->params['copyright'];?></a> All Rights Reserved.Copyright</td>
   </tr>
 </tbody></table>
 <!--版权  结束-->
