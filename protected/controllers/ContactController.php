@@ -127,6 +127,7 @@ class ContactController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle="联系我们";
 		$model=Contact::model()->find();
 		
 		$this->render('index',array(

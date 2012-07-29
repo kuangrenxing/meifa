@@ -79,22 +79,22 @@
 			<td align="left" valign="top">					
 				<div class="product_product_img">
 				<a href="<?php echo Yii::app()->createUrl('hairstylist/view',array('id'=>$v['id']));?>">
-					<img src="<?php echo Yii::app()->baseUrl.DIRECTORY_SEPARATOR.Yii::app()->params['uploadUrl'].DIRECTORY_SEPARATOR.$model['0']->uploadFields['avatar'].DIRECTORY_SEPARATOR.$v['avatar'];?>" width="160" height="132" border="0">
+					<img src="<?php echo Yii::app()->baseUrl.'/'.Yii::app()->params['uploadUrl'].'/'.$model['0']->uploadFields['avatar'].'/'.$v['avatar'];?>" width="160" height="132" border="0">
 				</a>	
 					<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
 				         <tbody><tr>
 				            <td valign="top" align="left">		
-				 				<a href="<?php echo Yii::app()->createUrl('hairstylist/view',array('id'=>$v['id']));?>"><img src="./images/bg2.gif" width="164" height="136"></a>			
+				 				<a href="<?php echo Yii::app()->createUrl('hairstylist/view',array('id'=>$v['id']));?>"><img width="164" height="136" alt="" src="<?php echo Yii::app()->baseUrl.'/'.Yii::app()->params['uploadUrl'].'/'.$v->uploadFields['avatar'].'/'.$v['avatar'];?>"></a>			
 							 </td>
 				         	</tr>
 				    	</tbody>
 				    </table> 
 				</div>
 				<div id="product_detail">
-				<p class="product_list_title"><a href="http://t.mobanku.com/00846/product_view.asp?id=305&bid=25&sid=175"><?php echo $v['name'];?></a></p>
+				<p class="product_list_title"><a href="<?php echo Yii::app()->createUrl('hairstylist/view',array('id'=>$v['id']));?>"><?php echo $v['name'];?></a></p>
 				<p class="product_List_marketprice"><span><?php echo $v['category'];?></span></p>
 				
-				<p class="product_list_introduce"><?php echo substr(strip_tags($v['motto']), 0,9);?>……</p>
+				<p class="product_list_introduce2">座右铭：<?php echo strip_tags($v['motto']);?></p>
 
 				</div>
 			</td>

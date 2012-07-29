@@ -60,6 +60,9 @@ class HairstyleshowController extends Controller
 		$models = Hairstyleshow::model()->findAll(array(
 				'order'=>'id desc',
 				));
+		$model = $this->loadModel($id);
+		
+		$this->pageTitle=$model['hairstylename'];
 		
 		$this->renderPartial('view',array(
 			'models'=>$models,
@@ -140,6 +143,8 @@ class HairstyleshowController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle="发型展示";
+		
 		$category=array();
 		//产品种类
 		$hairstyleshow = Hairstyleshow::model()->findAll();

@@ -61,9 +61,9 @@ body{font-family:"宋体",Arail,verdana;font-size:12px;line-height:1.5em;color:#
 #sidebar{text-align:left; }
 #sidebar li {list-style-image:none;color:#425564;display:block;line-height:24px;font-size:12px;}
 #sidebar a {color:#fff;padding:0px 0px;text-decoration:none;padding-left:10px;background: url('ico/ico00.gif') 0% 50% no-repeat;}
-#sidebar a:hover{color:#fff;background: url('ico/ico3.gif') 0% 50% no-repeat;}
+#sidebar a:hover{color:#fff;background: url('/images/ico3.gif') 0% 50% no-repeat;}
 #sidebar  .small a{padding-left:18px;color:#fff;font-size:12px;}
-#sidebar  .small a:hover{color:#fff;background: url('ico/ico3.gif') 10% 50% no-repeat;}
+#sidebar  .small a:hover{color:#fff;background: url('/images/ico3.gif') 10% 50% no-repeat;}
 
 
 
@@ -112,10 +112,21 @@ body{font-family:"宋体",Arail,verdana;font-size:12px;line-height:1.5em;color:#
 .product_List_marketprice span{color:#FE9900;}
 .product_List_memberprice{color:#CDCDCB;padding-left:7px;}
 .product_List_memberprice span{color:#FE0000;}
-.product_list_introduce{width:150px;padding-left:7px;color:#CDCDCB;line-height:22px;}
+.product_list_introduce{width:150px;padding-left:7px;color:#CDCDCB;line-height:22px;
+	white-space: nowrap; 
+    text-overflow: ellipsis;  
+     -o-text-overflow: ellipsis; 
+     overflow: hidden;
+}
 
 .product_list_model{padding-left:7px;color:#CDCDCB;}
-.product_list_introduce2{width:150px;padding-left:7px;color:#CDCDCB;line-height:22px;padding-top:10px;}
+.product_list_introduce2{
+	width:150px;padding-left:7px;color:#CDCDCB;line-height:22px;padding-top:10px;
+	white-space: nowrap; 
+    text-overflow: ellipsis;  
+     -o-text-overflow: ellipsis; 
+     overflow: hidden;
+}
 
 
 .product_list_title0{color:#CDCDCB;font-size:13px;font-weight:bold;line-height:25px;}
@@ -145,6 +156,7 @@ DIV.digg SPAN.disabled {border: #eee 1px solid;padding: 5px;margin: 2px;color: #
 /*设为首页box*/
 #box1{border:1px solid #fff;}
 .box1_t{ font-weight:bold;font-size:14px; height:21px; background:url('../images/box1_t.gif') no-repeat left top;background-color:#5E595F;padding:10px 0px 0px 30px;color:#fff; }
+.box1_t a{color:#fff;}
 .box1_m{ padding:12px 8px;color:#CCCACD;font-size:13px;height:230px;text-indent:2em;}
 .box1_m a{ color:#CCCACD;}
 
@@ -155,6 +167,7 @@ DIV.digg SPAN.disabled {border: #eee 1px solid;padding: 5px;margin: 2px;color: #
 .box1_m0 a{ color:#CCCACD;}
 
 .box0_t{ font-weight:bold;font-size:14px; height:21px; background:url('../images/box1_t.gif') no-repeat left top;background-color:#5E595F;padding:10px 0px 0px 30px;color:#fff; }
+.box0_t a{color:#fff;}
 .box0_m{ padding:12px 8px;color:#CCCACD;font-size:13px;}
 .box0_m a{ color:#CCCACD;}
 

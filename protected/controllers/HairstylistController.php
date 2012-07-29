@@ -56,10 +56,13 @@ class HairstylistController extends Controller
 		foreach($hairstylist as $v)
 		{
 			$category[]=$v['category'];
-		}
+		}		
+		
+		$model=$this->loadModel($id);
+		$this->pageTitle=$model['name'];
 		
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
 			'category'=>array_unique($category),
 		));
 	}
@@ -182,6 +185,8 @@ class HairstylistController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle="发型艺术家";
+		
 		$category=array();
 		//产品种类
 		$hairstylist = Hairstylist::model()->findAll();

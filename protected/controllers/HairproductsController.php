@@ -57,9 +57,10 @@ class HairproductsController extends Controller
 		{
 			$category[]=$v['category'];
 		}
-		
+		$model=$this->loadModel($id);
+		$this->pageTitle=$model['name'];
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
 			'category'=>array_unique($category),	
 		));
 	}
@@ -136,6 +137,8 @@ class HairproductsController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle="美发产品";
+		
 		$category=array();
 		//产品种类
 		$hairproducts = Hairproducts::model()->findAll();

@@ -3,8 +3,9 @@
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.nivo.slider.js', CClientScript::POS_HEAD); ?>
 
 
-<?php Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/themes/default/default.css', CClientScript::POS_HEAD); ?>
+
 <?php Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/nivo-slider.css', CClientScript::POS_HEAD); ?>
+<?php Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/themes/default/default.css', CClientScript::POS_HEAD); ?>
 <?php //Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/style.css', CClientScript::POS_HEAD); ?>
 
 <!--adpic   begin-->
@@ -14,32 +15,31 @@
   <tbody><tr>
     <td align="center" valign="top">
 
-<table width="1000" height="281" border="0" cellspacing="0" cellpadding="0" align="center">
+<table width="1000"  border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody>
   	<tr>
 	    <td>
     <div id="wrapper">
-       
-
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="images/toystory.jpg" data-thumb="images/toystory.jpg" alt="" />
-                <a href="http://dev7studios.com"><img src="images/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" /></a>
-                <img src="images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
-                <img src="images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />
+                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider1.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider1.png" alt="" />
+                <a href="http://dev7studios.com"><img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider2.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider2.png" alt="" title="This is an example of a caption" /></a>
+                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider3.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider3.png" alt=""  />
+                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider4.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider4.png" alt=""   title="#htmlcaption" />
             </div>
             <div id="htmlcaption" class="nivo-html-caption">
                 <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
             </div>
         </div>
-
     </div>
 	    
 	    </td>
   	</tr>
    </tbody>
 </table>
+<style>
 
+</style>
 
 
 </td>
@@ -73,7 +73,7 @@
 
   <tbody><tr>
 
-    <td align="left" valign="top" class="box1_t">美力极</td>
+    <td align="left" valign="top" class="box1_t"><a target="_blank" href="<?php echo Yii::app()->createUrl('about')?>"><?php echo Yii::app()->params['companyname'];?></a></td>
 
   </tr>
 
@@ -111,7 +111,7 @@
 
   <tbody><tr>
 
-    <td align="left" valign="top" class="box1_t">发行艺术</td>
+    <td align="left" valign="top" class="box1_t"><a target="_blank" href="<?php echo Yii::app()->createUrl('hairstylist');?>">发行艺术</a></td>
 
   </tr>
 
@@ -133,7 +133,7 @@
 				<div style="margin-left:6px;"><a href="<?php echo Yii::app()->createUrl('hairstylist/view',array('id'=>$v['id']));?>"><b><?php echo $v['name'];?></b></a>
 		
 				<p><?php echo $v['category'];?></p>
-				<p style="padding-top:15px;">座右铭：<?php echo $v['motto'];?></p>
+				<p style="padding-top:15px;margin-bottom:5px;width:123px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;">座右铭：<br><?php echo $v['motto'];?></p>
 		
 				</div>		  
 			 </td>
@@ -170,7 +170,7 @@
 
   <tbody>
   <tr>
-    <td align="left" valign="top" class="box1_t">金牌项目</td>
+    <td align="left" valign="top" class="box1_t"><a target="_blank" href="<?php echo Yii::app()->createUrl('hairstyleshow');?>">金牌项目</a></td>
   </tr>
   <tr>
     <td align="left" valign="top" class="box1_m0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -234,7 +234,7 @@
 		<tr>
 		<?php
 		foreach($hairstylist as $i=>$v): 
-		
+		if($i>1):
 			
 		?>
 			<td>
@@ -245,7 +245,7 @@
 					  <table width="155" height="128" border="0" cellspacing="1" cellpadding="1" bgcolor="#CCCCCC">
 						<tbody>
 							<tr>
-			                	<td bgcolor="#FFFFFF"><a target="_blank" href="<?php echo Yii::app()->createUrl('hairstylist/view',array('id'=>$v['id']));?>"><img src="<?php echo Yii::app()->baseUrl.'/'.Yii::app()->params['uploadUrl'].'/'.$v->uploadFields['picture'].'/'.$v['picture'];?>" width="155" height="128" border="0"></a></td>
+			                	<td bgcolor="#FFFFFF"><a target="_blank" href="<?php echo Yii::app()->createUrl('hairstylist/view',array('id'=>$v['id']));?>"><img src="<?php echo Yii::app()->baseUrl.'/'.Yii::app()->params['uploadUrl'].'/'.$v->uploadFields['avatar'].'/'.$v['avatar'];?>" width="155" height="128" border="0"></a></td>
 							</tr>
 			            </tbody>
 			           </table>
@@ -257,7 +257,7 @@
 			      </tbody>
 			    </table>
 			</td> 
-    	<?php endforeach;?>
+    	<?php endif;endforeach;?>
       
 
     
@@ -284,7 +284,7 @@
 <table width="700" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-left:7px;margin-top:18px;">
   <tbody>
 	  <tr>
-	    <td align="left" valign="top" class="box0_t">发型欣赏</td>
+	    <td align="left" valign="top" class="box0_t"><a target="_blank" href="<?php echo Yii::app()->createUrl('hairstyleshow')?>">发型欣赏</a></td>
 	  </tr>
   <tr>
     <td align="left" valign="top" class="box0_m"><table width="100%" border="0" cellspacing="2" cellpadding="2">
@@ -338,7 +338,7 @@
 
 <table width="700" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-left:7px;margin-top:18px;">
   <tbody><tr>
-    <td align="left" valign="top" class="box0_t">美发产品</td>
+    <td align="left" valign="top" class="box0_t"><a target="_blank" href="<?php echo Yii::app()->createUrl('hairproducts');?>">美发产品</a></td>
   </tr>
   <tr>
     <td align="left" valign="top" class="box0_m"><table width="100%" border="0" cellspacing="2" cellpadding="2">
@@ -408,20 +408,32 @@
 
   <tbody><tr>
 
-    <td align="left" valign="top" class="box0_t">最新动</td>
+    <td align="left" valign="top" class="box0_t">展示</td>
 
   </tr>
 
   <tr>
 
-    <td align="left" valign="top" class="box0_m">
+    <td align="left" valign="top" class="box0_m" style="padding:11px;8px">
 
 <table width="250"  border="0" cellspacing="0" cellpadding="0" align="center">
 
   <tbody><tr>
 
     <td>
-    
+        <div id="wrapper">
+        <div class="slider-wrapper theme-default">
+            <div id="slider-r" class="nivoSlider">
+                
+                <a href="http://dev7studios.com"><img  src="<?php echo Yii::app()->baseUrl;?>/images/indexslider-r2.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider-r2.png" alt="" title="This is an example of a caption" /></a>
+               <img  src="<?php echo Yii::app()->baseUrl;?>/images/indexslider-r1.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider-r1.png" alt="" />
+
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>
+    </div>
 
     
     </td>
@@ -452,7 +464,7 @@
 
   <tbody>
   <tr>
-    <td align="left" valign="top" class="box0_t">最新活动</td>
+    <td align="left" valign="top" class="box0_t"><a target="_blank" href="<?php echo Yii::app()->createUrl('specialoffers');?>">最新活动</a></td>
   </tr>
   <tr>
     <td align="left" valign="top" class="box0_m"><!--  index newslist start -->
@@ -489,7 +501,7 @@
 <table width="270" height="400" border="0" cellspacing="0" cellpadding="0" id="box1" style="margin-top:18px;">
 	<tbody>
 	<tr>
-    	<td align="left" valign="top" class="box0_t">美发知识</td>
+    	<td align="left" valign="top" class="box0_t"><a href="<?php echo Yii::app()->createUrl('knowledge')?>">美发知识</a></td>
   	</tr>
   	<tr>
     <td align="left" valign="top" class="box0_m"><!--  index newslist start -->
@@ -531,6 +543,34 @@
 
 <script type="text/javascript">
     $(window).load(function() {
-        $('#slider').nivoSlider();
+        $('#slider').nivoSlider({
+        	controlNav: true, // 显示序列导航  
+            });
+
+        $('#slider-r').nivoSlider({
+        	//controlNav: false, // 显示序列导航  
+        	 effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+             slices: 15, // For slice animations
+             boxCols: 8, // For box animations
+             boxRows: 4, // For box animations
+             animSpeed: 500, // Slide transition speed
+             pauseTime: 3000, // How long each slide will show
+             startSlide: 0, // Set starting Slide (0 index)
+             directionNav: true, // Next & Prev navigation
+             directionNavHide: true, // Only show on hover
+             controlNav: false, // 1,2,3... navigation
+             controlNavThumbs: false, // Use thumbnails for Control Nav
+             pauseOnHover: true, // Stop animation while hovering
+             manualAdvance: false, // Force manual transitions
+             prevText: 'Prev', // Prev directionNav text
+             nextText: 'Next', // Next directionNav text
+             randomStart: false, // Start on a random slide
+             beforeChange: function(){}, // Triggers before a slide transition
+             afterChange: function(){}, // Triggers after a slide transition
+             slideshowEnd: function(){}, // Triggers after all slides have been shown
+             lastSlide: function(){}, // Triggers when last slide is shown
+             afterLoad: function(){} // Triggers when slider has loaded
+            });
     });
+   
 </script>

@@ -127,6 +127,7 @@ class CareersController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle="招贤纳士";
 		$dataProvider=new CActiveDataProvider('Careers');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,

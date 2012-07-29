@@ -127,7 +127,7 @@ class AboutController extends Controller
 	 */
 	public function actionIndex()
 	{
-		
+		$this->pageTitle="关于我们";
 		$model=About::model()->find();
 		$this->render('index',array(
 			'model'=>$model,

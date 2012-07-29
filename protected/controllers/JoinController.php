@@ -127,6 +127,8 @@ class JoinController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle="在线加盟";
+		
 		$model=Join::model()->find(array(
 		    'order'=>'id desc',
 		));

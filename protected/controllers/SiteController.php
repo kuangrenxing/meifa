@@ -30,13 +30,14 @@ class SiteController extends Controller
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		
+		$this->pageTitle="首页";
 		//关于我们
 		$about=About::model()->find(array('order'=>'id desc'));
 		
 		//发型师
 		$hairstylist = Hairstylist::model()->findAll(array(
 				'order'=>'sequence asc,id asc',
-				'limit'=>'4',
+				'limit'=>'6',
 				));
 		//发型
 		$hairstyleshow = Hairstyleshow::model()->findAll(array(

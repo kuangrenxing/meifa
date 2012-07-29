@@ -57,9 +57,11 @@ class KnowledgeController extends Controller
 		{
 			$category[]=$v['category'];
 		}
+		$model=$this->loadModel($id);
+		$this->pageTitle=$model['title'];
 		
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
 			'category'=>array_unique($category),
 		));
 	}
@@ -136,6 +138,8 @@ class KnowledgeController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle="美发知识";
+		
 		$category=array();
 		//产品种类
 		$knowledge = Knowledge::model()->findAll();

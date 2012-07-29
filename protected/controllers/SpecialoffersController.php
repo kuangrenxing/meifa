@@ -50,8 +50,12 @@ class SpecialoffersController extends Controller
 	 */
 	public function actionView($id)
 	{
+		
+		$model=$this->loadModel($id);
+		$this->pageTitle=$model['title'];
+		
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
 		));
 	}
 
@@ -127,6 +131,8 @@ class SpecialoffersController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle="活动信息";
+		
 		//分页
 		$criteria = new CDbCriteria();
 		$criteria->order="create_time desc";

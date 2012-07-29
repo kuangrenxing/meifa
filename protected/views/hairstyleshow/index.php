@@ -80,12 +80,12 @@
 			<td align="left" valign="top">					
 				<div class="product_product_img">
 				<a target="_blank" href="<?php echo Yii::app()->createUrl('hairstyleshow/view',array('id'=>$v['id']));?>">
-					<img src="<?php echo Yii::app()->baseUrl.DIRECTORY_SEPARATOR.Yii::app()->params['uploadUrl'].DIRECTORY_SEPARATOR.$model['0']->uploadFields['picture'].DIRECTORY_SEPARATOR.$v['picture'];?>" width="160" height="132" border="0">
+					<img src="<?php echo Yii::app()->baseUrl.'/'.Yii::app()->params['uploadUrl'].'/'.$v->uploadFields['picture'].'/'.$v['picture'];?>" width="160" height="132" border="0">
 				</a>	
 					<table height="132" width="160" align="left" border="0" cellspacing="0" cellpadding="0" class="product_frame">
 				         <tbody><tr>
 				            <td valign="top" align="left">		
-				 				<a target="_blank" href="<?php echo Yii::app()->createUrl('hairstyleshow/view',array('id'=>$v['id']));?>"><img src="./images/bg2.gif" width="164" height="136"></a>			
+				 				<a target="_blank" href="<?php echo Yii::app()->createUrl('hairstyleshow/view',array('id'=>$v['id']));?>"><img src="<?php echo Yii::app()->baseUrl.'/'.Yii::app()->params['uploadUrl'].'/'.$v->uploadFields['picture'].'/'.$v['picture'];?>" width="164" height="136"></a>			
 							 </td>
 				         	</tr>
 				    	</tbody>
@@ -93,9 +93,9 @@
 				</div>
 				<div id="product_detail">
 				<p class="product_list_title"><a target="_blank" href="<?php echo Yii::app()->createUrl('hairstyleshow/view',array('id'=>$v['id']));?>"><?php echo $v['hairstylename'];?></a></p>
-				<p class="product_List_marketprice">市场价：<span><?php echo $v['price'];?>元</span></p>
+				<p class="product_List_marketprice">价格：<span><?php echo $v['price'];?>元</span></p>
 				
-				<p class="product_list_introduce"><?php echo substr(strip_tags($v['detail']), 0,9);?>……</p>
+				<p class="product_list_introduce"><?php echo strip_tags($v['detail']);?></p>
 
 				</div>
 			</td>
