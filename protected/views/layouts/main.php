@@ -40,6 +40,7 @@
     <li><a href="<?php echo Yii::app()->createUrl("hairproducts");?>">美发产品</a></li>
     <li><a href="<?php echo Yii::app()->createUrl("join");?>">在线加盟</a></li>
     <li><a href="<?php echo Yii::app()->createUrl("specialoffers");?>">活动信息</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl("knowledge");?>">美发知识</a></li>
     <li><a href="<?php echo Yii::app()->createUrl("careers");?>">招贤纳士</a></li>
     <li><a href="<?php echo Yii::app()->createUrl("contact");?>">联系我们</a></li>
 </ul>
