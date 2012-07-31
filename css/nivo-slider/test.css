@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.theme-default .nivoSlider{
+	position: relative;
+}
+.theme-default .nivoSlider img{
+	position:absolute;
+}
+.test1{
+	border:solid 2px #FF0000;
+	width:40px;
+	height:40px;
+}

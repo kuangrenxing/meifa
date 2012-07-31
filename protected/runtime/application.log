@@ -130,7 +130,7 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/index.php/ManageModel/list/model_name/About
 ---
-2012/07/25 21:39:31 [error] [php] include(�.php): failed to open stream: No such file or directory (/var/www/meifa/yii/YiiBase.php:418)
+2012/07/25 21:39:31 [error] [php] include(�.php): failed to open stream: No such file or directory (/var/www/meifa/yii/YiiBase.php:418)
 Stack trace:
 #0 /var/www/meifa/yii/db/ar/CActiveRecord.php(2310): spl_autoload_call()
 #1 /var/www/meifa/yii/db/ar/CActiveRecord.php(2291): CActiveRecordMetaData->addRelation()
@@ -1861,7 +1861,7 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
-2012/07/26 03:24:47 [error] [php] scandir(\upload\avatar,\upload\avatar) [<a href='function.scandir'>function.scandir</a>]: ϵͳ�Ҳ���ָ����·���� (code: 3) (D:\work\workspace\meifa\protected\views\hairstylist\test.php:18)
+2012/07/26 03:24:47 [error] [php] scandir(\upload\avatar,\upload\avatar) [<a href='function.scandir'>function.scandir</a>]: ϵͳ�Ҳ���ָ����·���� (code: 3) (D:\work\workspace\meifa\protected\views\hairstylist\test.php:18)
 Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CBaseController.php(96): HairstylistController->renderInternal()
 #1 D:\work\workspace\meifa\yii\web\CController.php(870): HairstylistController->renderFile()
@@ -9590,6 +9590,7 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+<<<<<<< HEAD
 2012/07/30 09:35:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\work\workspace\meifa\yii\db\CDbConnection.php:382
 Stack trace:
 #0 D:\work\workspace\meifa\yii\db\CDbConnection.php(331): CDbConnection->open()
@@ -9633,10 +9634,1145 @@ Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
 #1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
 #2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+
+2012/07/30 22:21:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 22:36:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 22:36:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
 #3 {main}
 REQUEST_URI=/css/ie7_nav.css
 HTTP_REFERER=http://meifa.dev/
 ---
+2012/07/30 22:36:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:01:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:01:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:01:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:01:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:02:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:04:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:09:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:12:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:13:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:14:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:15:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:16:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:17:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:20:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:25:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:50:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:50:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:51:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:52:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:53:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:54:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:59:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/30 23:59:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/30 23:59:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 00:00:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 00:03:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 00:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:07:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:09:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 00:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 00:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:23:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:23:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:46:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:46:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:49:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:50:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:50:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+---
+2012/07/31 00:50:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:50:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+---
+2012/07/31 00:56:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 00:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 00:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 00:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 00:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 00:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 00:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 00:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 00:59:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist/index?page=2
+---
+2012/07/31 00:59:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist/index?page=2
+---
+2012/07/31 00:59:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstylist/index?page=2
+---
+2012/07/31 00:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist/36
+---
+2012/07/31 00:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist/36
+---
+2012/07/31 00:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstylist/36
+---
+2012/07/31 00:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstyleshow
+---
+2012/07/31 00:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairstyleshow
+---
+2012/07/31 00:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstyleshow
+---
+2012/07/31 00:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairstyleshow/index?page=2
+---
+2012/07/31 00:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstyleshow/index?page=2
+---
+2012/07/31 00:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstyleshow/index?page=2
+---
+2012/07/31 01:00:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:00:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:00:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:00:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts/1
+---
+2012/07/31 01:00:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts/1
+---
+2012/07/31 01:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairproducts/1
+---
+2012/07/31 01:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts/index?page=2
+---
+2012/07/31 01:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts/index?page=2
+---
+2012/07/31 01:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairproducts/index?page=2
+---
+2012/07/31 01:00:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/join
+---
+2012/07/31 01:00:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/join
+---
+2012/07/31 01:00:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/join
+---
+2012/07/31 01:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers
+---
+2012/07/31 01:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers
+---
+2012/07/31 01:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/specialoffers
+---
+2012/07/31 01:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers/10
+---
+2012/07/31 01:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers/10
+---
+2012/07/31 01:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/specialoffers/10
+---
+2012/07/31 01:01:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers
+---
+2012/07/31 01:01:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers
+---
+2012/07/31 01:01:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/specialoffers
+---
+2012/07/31 01:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/knowledge
+---
+2012/07/31 01:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/knowledge
+---
+2012/07/31 01:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/knowledge
+---
+2012/07/31 01:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/careers
+---
+2012/07/31 01:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/careers
+---
+2012/07/31 01:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/careers
+---
+2012/07/31 01:01:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:01:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:01:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+<<<<<<< HEAD
 2012/07/30 09:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
 Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
@@ -9676,19 +10812,197 @@ Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
 #1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
 #2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+
+2012/07/31 01:02:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 01:02:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 01:02:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 01:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 01:02:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist/39
+---
+2012/07/31 01:02:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstylist/39
+---
+2012/07/31 01:02:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:02:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts/2
+---
+2012/07/31 01:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairproducts/2
+---
+2012/07/31 01:02:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/join
+---
+2012/07/31 01:02:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+
 #3 {main}
 REQUEST_URI=/css/ico/ico00.gif
 HTTP_REFERER=http://meifa.dev/join
 ---
+
 2012/07/30 09:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
 Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
 #1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
 #2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+
+2012/07/31 01:02:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:02:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairproducts
+---
+2012/07/31 01:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairproducts/2
+---
+2012/07/31 01:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairproducts/2
+---
+2012/07/31 01:02:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstyleshow
+---
+2012/07/31 01:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstyleshow
+---
+2012/07/31 01:03:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers
+---
+2012/07/31 01:03:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+
 #3 {main}
 REQUEST_URI=/css/ico/ico00.gif
 HTTP_REFERER=http://meifa.dev/specialoffers
 ---
+<<<<<<< HEAD
 2012/07/30 09:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
 Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
@@ -9757,19 +11071,170 @@ Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
 #1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
 #2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+
+2012/07/31 01:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers/10
+---
+2012/07/31 01:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/specialoffers/10
+---
+2012/07/31 01:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/knowledge
+---
+2012/07/31 01:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/knowledge
+---
+2012/07/31 01:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/careers
+---
+2012/07/31 01:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/careers
+---
+2012/07/31 01:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 01:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 01:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 01:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 01:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/join
+---
+2012/07/31 01:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+
 #3 {main}
 REQUEST_URI=/css/ico/ico00.gif
 HTTP_REFERER=http://meifa.dev/join
 ---
+
 2012/07/30 09:37:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
 Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
 #1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
 #2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+
+2012/07/31 01:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/specialoffers
+---
+2012/07/31 01:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+
 #3 {main}
 REQUEST_URI=/css/ico/ico00.gif
 HTTP_REFERER=http://meifa.dev/specialoffers
 ---
+
 2012/07/30 09:37:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
 Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
@@ -9855,10 +11320,184 @@ Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
 #1 D:\work\workspace\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
 #2 D:\work\workspace\meifa\index.php(13): CApplication->run()
+
+2012/07/31 01:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/careers
+---
+2012/07/31 01:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/careers
+---
+2012/07/31 01:04:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:04:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:06:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:06:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 01:08:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:08:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:09:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 01:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 01:10:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 01:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 01:12:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:12:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:13:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 01:13:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+
 #3 {main}
 REQUEST_URI=/css/ico/ico00.gif
 HTTP_REFERER=http://meifa.dev/about
 ---
+
 2012/07/30 11:03:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\work\workspace\meifa\yii\web\CWebApplication.php:280
 Stack trace:
 #0 D:\work\workspace\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
@@ -9925,3 +11564,206 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+
+2012/07/31 01:13:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/contact
+---
+2012/07/31 01:14:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+---
+2012/07/31 01:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:14:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:14:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 01:14:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/about
+---
+2012/07/31 01:14:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:14:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 01:14:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstylist
+---
+2012/07/31 01:14:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/hairstylist/39
+---
+2012/07/31 01:14:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ico/ico00.gif"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ico/ico00.g...')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ico/ico00.gif
+HTTP_REFERER=http://meifa.dev/hairstylist/39
+---
+2012/07/31 01:15:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/31 01:16:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+---
+2012/07/31 01:16:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+---
+2012/07/31 01:19:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:19:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+2012/07/31 01:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie6_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie6_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie6_nav.css
+---
+2012/07/31 01:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+---
+2012/07/31 01:27:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/ie7_nav.css"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('css/ie7_nav.css')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/ie7_nav.css
+HTTP_REFERER=http://meifa.dev/
+---
+

@@ -1,4 +1,5 @@
 <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+<?php //Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.js', CClientScript::POS_HEAD); ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.easing.1.3.js', CClientScript::POS_HEAD); ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.lavalamp-1.3.5.js', CClientScript::POS_HEAD); ?>
 

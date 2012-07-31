@@ -1,14 +1,20 @@
 <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+<?php //Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.js', CClientScript::POS_HEAD); ?>
+
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.easing.1.3.js', CClientScript::POS_HEAD); ?>
-<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.nivo.slider.js', CClientScript::POS_HEAD); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.nivo.slider.pack.js', CClientScript::POS_HEAD); ?>
 
 
 
-<?php Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/nivo-slider.css', CClientScript::POS_HEAD); ?>
-<?php Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/themes/default/default.css', CClientScript::POS_HEAD); ?>
+<?php //Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/nivo-slider.css', CClientScript::POS_HEAD); ?>
+<?php //Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/themes/default/default.css', CClientScript::POS_HEAD); ?>
 <?php //Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/style.css', CClientScript::POS_HEAD); ?>
 
+<?php //Yii::app()->clientScript->registerCSSFile(Yii::app()->request->baseUrl.'/css/nivo-slider/test.css', CClientScript::POS_HEAD); ?>
+
 <!--adpic   begin-->
+<link href="<?php echo Yii::app()->request->baseUrl?>/css/nivo-slider/nivo-slider.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo Yii::app()->request->baseUrl?>/css/nivo-slider/themes/default/default.css" rel="stylesheet" type="text/css" />
 
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
 
@@ -19,6 +25,7 @@
   <tbody>
   	<tr>
 	    <td>
+        <div class="test1"></div>
     <div id="wrapper">
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
@@ -540,12 +547,27 @@
 
 </tbody></table>
 
-
 <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider({
-        	controlNav: true, // 显示序列导航  
-            });
+jQuery(window).load(function(){
+	jQuery("#slider").nivoSlider({
+		effect:"random",
+		slices:15,
+		boxCols:8,
+		boxRows:4,
+		animSpeed:500,
+		pauseTime:300000,
+		startSlide:0,
+		directionNav:true,
+		directionNavHide:true,
+		controlNav:true,
+		controlNavThumbs:false,
+		controlNavThumbsFromRel:true,
+		keyboardNav:true,
+		pauseOnHover:true,
+		manualAdvance:false
+	});
+
+
 
         $('#slider-r').nivoSlider({
         	//controlNav: false, // 显示序列导航  
@@ -571,6 +593,16 @@
              lastSlide: function(){}, // Triggers when last slide is shown
              afterLoad: function(){} // Triggers when slider has loaded
             });
-    });
-   
+
+  }); 
 </script>
+<style>
+
+.theme-default .nivo-controlNav {
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	margin-left: -40px;
+	z-index:10;
+}
+</style>
