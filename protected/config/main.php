@@ -67,7 +67,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=meifa',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'public',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		
