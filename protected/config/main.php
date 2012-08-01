@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
@@ -99,7 +99,7 @@ return array(
 		'adminEmail'=>'chenxin448@126.com',
 		'companyname'=>'鼎峰国际',
 		'upload'=>'upload',//上传文件夹
-		'uploadUrl'=>'protected'.DIRECTORY_SEPARATOR.'upload',//上传文件夹'
+		'uploadUrl'=>'protected/upload',//上传文件夹'
 		'avatar'=>'upload'.DIRECTORY_SEPARATOR.'avatar',//头像路径
 		'picture'=>'upload'.DIRECTORY_SEPARATOR.'picture',//照片路径
 		'copyright'=>'鼎峰国际烫染连锁机构',
