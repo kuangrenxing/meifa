@@ -162,9 +162,11 @@ DIV.digg SPAN.disabled {border: #eee 1px solid;padding: 5px;margin: 2px;color: #
 
 .box1_m1{height:235px; padding:12px 8px 7px 8px;color:#CCCACD;font-size:13px;}
 .box1_m1 a{ color:#CCCACD;}
+.box1_m1 a:hover{ color:#FF6801;text-decoration: none;}
 
 .box1_m0{height:230px; padding:12px 10px;color:#CCCACD;font-size:13px;background:url('../images/bg3.gif') no-repeat right top;}
 .box1_m0 a{ color:#CCCACD;}
+.box1_m0 a:hover{color:#FF6801;text-decoration: none;}
 
 .box0_t{ font-weight:bold;font-size:14px; height:21px; background:url('../images/box1_t.gif') no-repeat left top;background-color:#5E595F;padding:10px 0px 0px 30px;color:#fff; }
 .box0_t a{color:#fff;}
@@ -240,22 +242,72 @@ DIV.digg SPAN.disabled {border: #eee 1px solid;padding: 5px;margin: 2px;color: #
 
 /*site/index*/
 
-ul#menu {   
+ul#menu {
+    list-style:none;
+    margin:5px;
+   /* border:1px solid #333;*/
+    padding:10px;
     overflow:auto; /* makes sure the container fits the floated list-items below */
+   /* background-color:#ccc; *//* moved and lightened the background color from ul#menu li */
+
 }
-ul#menu li{   
-    float:left; /* floats list items to the left, creating a horizontal menu */   
+ul#menu li{
+    /*margin:3px 5px;*/
+    padding:4px 0px 5px 0px;
+    float:left;
+    /*font-family:Tahoma, Verdana, Arial, sans-serif;*/
+    font-size:18px;
+    font-weight:bold;
+    /*font-style:italic;*/
+    text-shadow: rgba(0,0,0, 1) 1px 1px 2px;
+    color:#333;
+
+
+
 }
-ul#menu li a {
+
+ul#menu li span {
     position: relative; /* must have position set to anything other than static to use z-index */
     z-index: 5; /* 5 layers above all normal elements */
 }
-ul#menu li.backLava {
-    position:absolute; /* this is automatically added by lavaLamp, if not set, but let's set it for good practice */
-    z-index:3; /* 3 levels higher than all normal elements */    
-    border-bottom:2px solid brown;
+ul#menu li a {
+   display:block; /* allows us to add top and bottom padding to the element */
+    padding:8px 20px 9px 18px;  /* now we have nice padding for link hi-lighting */
+    position: relative;
+    z-index: 5;
+    color:#333;
+    text-decoration:none;
+
 }
 
+ul#menu li.backLava {
+    position:absolute;
+    z-index:3;
+    background:url(/images/bg-oranger.jpg) no-repeat top left;
+    border:2px solid brown;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #000;
+    -webkit-box-shadow: 2px 2px 3px #000;
+    -moz-box-shadow: 2px 2px 3px #000;
+}
+
+ul#menu li a:hover {
+    color:#FFF;
+}
+
+
+/************/
+#pager ul.yiiPager .hidden a {
+	border: solid 1px #888;
+	color: #888;
+}
+ ul.yiiPager .hidden a:hover {
+	background-color:#3b3543;
+	color: white;
+	text-decoration: none;
+}
 
 
 

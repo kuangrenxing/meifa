@@ -38,16 +38,16 @@
     <td align="right" valign="top" class="nav"><div id="global-header">
 <div class="nav">
 <ul id="menu">
-    <li <?php if($this->route == '/' || $this->route=='site/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->baseUrl;?>/">网站首页</a></li>
-    <li <?php if($this->route =='about/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("about");?>">关于我们</a></li>
-    <li <?php if($this->route =='hairstylist/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairstylist");?>">发型艺术家</a></li>
-    <li <?php if($this->route =='hairstyleshow/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairstyleshow");?>">发型展示</a></li>
-    <li <?php if($this->route =='hairproducts/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairproducts");?>">美发产品</a></li>
-    <li <?php if($this->route =='join/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("join");?>">在线加盟</a></li>
-    <li <?php if($this->route =='specialoffers/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("specialoffers");?>">活动信息</a></li>
-    <li <?php if($this->route =='knowledge/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("knowledge");?>">美发知识</a></li>
-    <li <?php if($this->route =='careers/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("careers");?>">招贤纳士</a></li>
-    <li <?php if($this->route =='contact/index'):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("contact");?>">联系我们</a></li>
+    <li <?php if(strpos($this->route,'site')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->baseUrl;?>/">网站首页</a></li>
+    <li <?php if(strpos($this->route,'about')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("about");?>">关于我们</a></li>
+    <li <?php if(strpos($this->route,'hairstylist')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairstylist");?>">发型艺术家</a></li>
+    <li <?php if(strpos($this->route,'hairstyleshow')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairstyleshow");?>">发型展示</a></li>
+    <li <?php if(strpos($this->route,'hairproducts')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("hairproducts");?>">美发产品</a></li>
+    <li <?php if(strpos($this->route,'join')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("join");?>">在线加盟</a></li>
+    <li <?php if(strpos($this->route,'specialoffers')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("specialoffers");?>">活动信息</a></li>
+    <li <?php if(strpos($this->route,'knowledge')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("knowledge");?>">美发知识</a></li>
+    <li <?php if(strpos($this->route,'careers')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("careers");?>">招贤纳士</a></li>
+    <li <?php if(strpos($this->route,'contact')!==false):?>class="on" <?php endif;?>><a href="<?php echo Yii::app()->createUrl("contact");?>">联系我们</a></li>
 </ul>
 </div>
 </div></td>

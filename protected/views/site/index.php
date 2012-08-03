@@ -29,10 +29,11 @@
     <div id="wrapper">
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider1.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider1.png" alt="" />
-                <a href="http://dev7studios.com"><img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider2.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider2.png" alt="" title="This is an example of a caption" /></a>
-                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider3.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider3.png" alt=""  />
-                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider4.png" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider4.png" alt=""   title="#htmlcaption" />
+                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider1.jpg" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider1.jpg" alt="" />
+                <a href="http://dev7studios.com"><img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider2.jpg" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider2.jpg" alt="" title="This is an example of a caption" /></a>
+                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider3.jpg" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider3.jpg" alt=""  />
+                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider4.jpg" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider4.jpg" alt=""   title="#htmlcaption" />
+                <img src="<?php echo Yii::app()->baseUrl;?>/images/indexslider5.jpg" data-thumb="<?php echo Yii::app()->baseUrl;?>/images/indexslider5.jpg" alt=""   title="#htmlcaption" />
             </div>
             <div id="htmlcaption" class="nivo-html-caption">
                 <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
