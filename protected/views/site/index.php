@@ -603,7 +603,19 @@ jQuery(window).load(function(){
 	position: absolute;
 	left: 50%;
 	bottom: 0px;
-	margin-left: -40px;
+	margin-left: -88px;
 	z-index:10;
+	/*border:1px solid red;*/
+	width:132px;
 }
+.theme-default .nivo-controlNav a{
+	z-index:10;
+	display:block;
+	float:left;
+
+}
+.theme-default .nivo-caption{
+	text-align:left;
+	} 
+
 </style>
