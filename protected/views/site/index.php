@@ -557,7 +557,7 @@ jQuery(window).load(function(){
 		boxRows:4,
 		animSpeed:500,
 		pauseTime:300000,
-		startSlide:0,
+		startSlide:2,
 		directionNav:true,
 		directionNavHide:true,
 		controlNav:true,
