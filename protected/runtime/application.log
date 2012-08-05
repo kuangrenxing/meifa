@@ -14947,3 +14947,211 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2012/08/06 00:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:19:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:19:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:20:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:21:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:21:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:22:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:22:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:22:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:22:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:22:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:22:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:23:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:24:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:24:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 00:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\meifa\yii\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\meifa\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\meifa\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\meifa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
