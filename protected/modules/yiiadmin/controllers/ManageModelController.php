@@ -191,7 +191,11 @@ class ManageModelController extends YAdminController
         $model_name=(string)$_GET['model_name']; 
         $model=$this->module->loadModel($model_name)->findByPk($_GET['pk']);
 		$oldmodel = $model->attributes;
-		//print_r($oldmodel);
+		//admin model时密码设空
+		if($model_name=="Admin")
+		{
+			$model->password="";
+		}
         if (Yii::app()->request->isPostRequest)
         {
             if (isset($_POST[$model_name]))
