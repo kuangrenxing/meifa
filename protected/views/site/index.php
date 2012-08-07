@@ -557,7 +557,7 @@ jQuery(window).load(function(){
 		boxRows:4,
 		animSpeed:500,
 		pauseTime:300000,
-		startSlide:0,
+		startSlide:2,
 		directionNav:true,
 		directionNavHide:true,
 		controlNav:true,
@@ -603,7 +603,19 @@ jQuery(window).load(function(){
 	position: absolute;
 	left: 50%;
 	bottom: 0px;
-	margin-left: -40px;
+	margin-left: -88px;
 	z-index:10;
+	/*border:1px solid red;*/
+	width:132px;
 }
+.theme-default .nivo-controlNav a{
+	z-index:10;
+	display:block;
+	float:left;
+
+}
+.theme-default .nivo-caption{
+	text-align:left;
+	} 
+
 </style>

@@ -111,4 +111,47 @@ class Contact extends CActiveRecord
 				),
 		);
 	}
+	
+	public function adminSearch2()
+    {
+		 $url_prefix='Yii::app()->createUrl("yiiadmin/manageModel/';
+		
+		return array(
+            'id'=>'objects-grid',
+            'dataProvider'=>$this->search(),
+            'filter'=>$this,
+            'itemsCssClass'=>'table',
+            'enablePagination'=>true,
+            'pagerCssClass'=>'pagination',
+            'selectableRows'=>2,
+            'pager'=>array(
+                'cssFile'=>false,
+                'htmlOptions'=>array('class'=>'pagination'),
+                'header'=>false,
+            ),
+            'template'=>' 
+                <div class="module changelist-results">
+                    {items}
+                </div>
+                <div class="module pagination">
+                    {pager}{summary}<br clear="all">
+                </div> 
+            ',
+            'columns'=>array(
+			
+            array(
+                'class'=>'YiiAdminButtonColumn',
+                'updateButtonUrl'=>$url_prefix.'update",array("model_name"=>"'.get_class($model).'","pk"=>$data->primaryKey))',
+                'deleteButtonUrl'=>$url_prefix.'delete",array("model_name"=>"'.get_class($model).'","pk"=>$data->primaryKey))',
+                'viewButtonUrl'=>$url_prefix.'view",array("model_name"=>"'.get_class($model).'","pk"=>$data->primaryKey))',
+                'viewButtonOptions'=>array(
+                    'style'=>'display:none;',
+                 ),
+				'deleteButtonOptions'=>array(
+                    'style'=>'display:none;',
+                 ),
+            ),
+            ),
+        ); 
+    }
 }

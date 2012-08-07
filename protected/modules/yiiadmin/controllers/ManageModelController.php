@@ -44,6 +44,11 @@ class ManageModelController extends YAdminController
             $data1=array();
 
         $url_prefix='Yii::app()->createUrl("yiiadmin/manageModel/';
+		
+		if (method_exists($model,'adminSearch2'))
+            $data2=$model->adminSearch2();
+        else
+            {
 
         $data2=array(
             'id'=>'objects-grid',
@@ -75,10 +80,11 @@ class ManageModelController extends YAdminController
                 'viewButtonOptions'=>array(
                     'style'=>'display:none;',
                  ),
+				
             ),
             ),
         ); 
-
+			}
         $listData=array_merge_recursive($data1,$data2); 
 
         if (Yii::app()->request->isAjaxRequest)
@@ -163,6 +169,7 @@ class ManageModelController extends YAdminController
                 		 
                 	}  
                 	if($model->save())
+
                 	{
 	                	Yii::app()->user->setFlash('flashMessage', YiiadminModule::t('Запись создана.'));
 	                	$this->redirectUser($model_name,$primaryKey);
@@ -234,6 +241,7 @@ class ManageModelController extends YAdminController
             if ($model->validate())
             {
             	
+
             	//有上传字段进行上传
             	if(isset($model->uploadFields))
             	{
