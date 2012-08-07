@@ -5,13 +5,14 @@ Yii::import('UserIdentity');
 class LoginForm extends CFormModel
 {
 	public $password;
+	public $username;
 
 	private $_identity;
 
 	public function rules()
 	{
 		return array(
-			array('password', 'required'),
+			array('password,username', 'required'),
 			array('password', 'authenticate'),
 		);
 	}
