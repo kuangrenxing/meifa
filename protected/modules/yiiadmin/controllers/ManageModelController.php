@@ -207,9 +207,7 @@ class ManageModelController extends YAdminController
         {
             if (isset($_POST[$model_name]))
                 $model->attributes=$_POST[$model_name]; 
-            
-
-            
+                       
             //存在上传字段
             if(isset($model->uploadFields))
             {
@@ -240,7 +238,19 @@ class ManageModelController extends YAdminController
 
             if ($model->validate())
             {
-            	
+            //修改用户密码空时不修改 
+			if($model_name=="Admin")
+			{
+				if($_POST[$model_name]['password'] == '')
+				{
+					$model->password=$oldmodel['password'];
+				}
+				else
+				{//密码不为空，加密
+					$model->password=md5($model->password);
+				}
+			}
+	
 
             	//有上传字段进行上传
             	if(isset($model->uploadFields))

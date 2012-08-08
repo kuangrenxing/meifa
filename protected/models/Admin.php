@@ -136,10 +136,10 @@ class Admin extends CActiveRecord
 	
 	public function beforeSave()
 	{
-// 		if($this->isNewRecord)
-// 		{
+ 		if($this->isNewRecord)
+ 		{
 			$this->password=md5($this->password);
-// 		}
+ 		}
 		return true;
 	}
 }

@@ -1,5 +1,5 @@
-assets/*
-protected/upload/*
+protected/upload/
 protected/runtime/
-runtime/
 assets/
+
+
