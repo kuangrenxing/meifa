@@ -4,6 +4,7 @@ Yii::import('UserIdentity');
 
 class LoginForm extends CFormModel
 {
+	
 	public $password;
 	public $username;
 
@@ -16,6 +17,15 @@ class LoginForm extends CFormModel
 			array('password', 'authenticate'),
 		);
 	}
+	
+	public function attributeLabels()
+	{
+		return array(
+			
+				'username'=>'用户名',
+				'password' => '密码',
+		);
+	}
 
 	/**
 	 * Authenticates the password.
@@ -23,7 +33,7 @@ class LoginForm extends CFormModel
 	 */
 	public function authenticate($attribute,$params)
 	{
-		$this->_identity=new UserIdentity('yiier',$this->password);
+		$this->_identity=new UserIdentity($this->username,$this->password);
 		if(!$this->_identity->authenticate())
 			$this->addError('password','Incorrect password.');
 	}

@@ -30,7 +30,7 @@ class DefaultController extends YAdminController
     public function actionLogin()
     {
        	$model=Yii::createComponent('LoginForm');
-		print_r($model);
+		
 		// collect user input data
 		if(isset($_POST['LoginForm']))
 		{
