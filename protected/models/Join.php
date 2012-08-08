@@ -149,4 +149,11 @@ class Join extends CActiveRecord
             ),
         ); 
     }
+    
+    //创建与修改时下边的按钮　删除多余按钮　save delete continue addanother
+    public $submit_button=array(
+    		'delete',
+    		'continue',
+    		'addanother',
+    );
 }

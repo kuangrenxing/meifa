@@ -48,10 +48,10 @@
         </div>
         <?php endforeach; ?>
         </fieldset>
-                    
 <div class="module footer">
     <ul class="submit-row">
     <?php if (!$model->isNewRecord): ?>
+		<?php if(!(array_key_exists('submit_button',$model) && in_array('delete',$model['submit_button']))):?>
         <li class="left delete-link-container">
             <?php echo CHtml::link(YiiadminModule::t('Удалить'),$this->createUrl('manageModel/delete',array(
                     'model_name'=>get_class($model),
@@ -61,17 +61,29 @@
                     'class'=>'delete-link',
                     'confirm'=>YiiadminModule::t('Удалить запись ID ').$model->primaryKey.'?',
             )); ?>
-        </li> 
+		</li>
+
+		<?php endif; ?>
     <?php endif; ?>
+
+		<?php if(!(array_key_exists('submit_button',$model) && in_array('save',$model['submit_button']))):?>
         <li class="submit-button-container">
             <input type="submit" value="<?php echo YiiadminModule::t('Сохранить');?>" class="default" name="_save">
         </li>
+		<?php endif; ?>
+
+		<?php if(!(array_key_exists('submit_button',$model) && in_array('addanother',$model['submit_button']))):?>
         <li class="submit-button-container">
             <input type="submit" value="<?php echo YiiadminModule::t('Сохранить и создать новую запись');?>" name="_addanother">
         </li>
+		<?php endif; ?>
+
+		<?php if(!(array_key_exists('submit_button',$model) && in_array('continue',$model['submit_button']))):?>
         <li class="submit-button-container">
             <input type="submit" value="<?php echo YiiadminModule::t('Сохранить и редактировать');?>" name="_continue">
         </li> 
+		<?php endif; ?>
+
     </ul
     ><br clear="all">
 </div>

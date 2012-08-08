@@ -38,26 +38,7 @@ class YiiadminModule extends CWebModule
 			),
 		));
         
-        new About();
-        new Careers();
-        new Contact();
-        new Hairproducts();
-        new Hairstyleshow();
-        new Hairstylist();
-        new Join();
-        new Knowledge();
-        new Specialoffers();
-        $this->registerModels=array(
-        		'models.About',
-        		'models.Careers',
-        		'models.Contact',
-        		'models.Hairproducts',
-        		'models.Hairstyleshow',
-        		'models.Hairstylist',
-        		'models.Join',
-        		'models.Knowledge',
-        		'models.Specialoffers',
-        		);
+
 
 		$this->setImport(array(
 			'yiiadmin.models.*',
