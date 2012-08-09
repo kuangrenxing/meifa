@@ -42,10 +42,11 @@ class Admin extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('username, password,password_repeat , email', 'required','on'=>'create'),
-		
+			
 			array('username, email', 'length', 'max'=>64),
 			array('password', 'compare'),
 			array('password,password_repeat', 'length', 'max'=>20),
+			array('username','unique'),
 			array('sex', 'length', 'max'=>2),
 			array('email','email'),
 			// The following rule is used by search().
