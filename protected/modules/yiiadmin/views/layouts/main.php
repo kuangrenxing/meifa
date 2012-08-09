@@ -16,6 +16,7 @@ $cs->registerCssFile($baseUrl.'/css/base.css');
 <div id="header"> 
     <div class="branding">&nbsp;</div> 
     <div class="admin-title">鼎峰国际管理</div> 
+    <?php if(Yii::app()->user->name!="Guest"):?>
 	<ul class="nav">
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "About"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/About');?>">公司简介</a></li>
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Hairstylist"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Hairstylist');?>">发型师</a></li>
@@ -27,6 +28,7 @@ $cs->registerCssFile($baseUrl.'/css/base.css');
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Careers"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Careers');?>">招贤纳士</a></li>
 		<li><a <?php if(isset($_GET['model_name']) && $_GET['model_name'] == "Contact"):?>class="active" <?php endif;?> href="<?php echo $this->createUrl('manageModel/list/model_name/Contact');?>">联系我们</a></li>
 	</ul>
+	<?php endif;?>
         <ul id="user-tools"> 
             <li><a href="#" class="user-options-handler collapse-handler"><?php echo Yii::app()->user->name;?></a></li>
             <li><a href="<?php echo $this->createUrl('/yiiadmin/default/logout'); ?>" class="user-options-handler collapse-handler"><?php echo YiiadminModule::t('Выход'); ?></a></li>

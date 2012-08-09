@@ -16,7 +16,7 @@
 <link href="<?php echo Yii::app()->request->baseUrl?>/css/nivo-slider/nivo-slider.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo Yii::app()->request->baseUrl?>/css/nivo-slider/themes/default/default.css" rel="stylesheet" type="text/css" />
 
-<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="1000" height="280" border="0" align="center" cellpadding="0" cellspacing="0">
 
   <tbody><tr>
     <td align="center" valign="top">
